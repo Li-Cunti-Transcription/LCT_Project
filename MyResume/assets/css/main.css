@@ -620,6 +620,10 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
+.writers{
+  width: 150px;
+  height: 200px;
+}
 
 /*--------------------------------------------------------------
 # Stats Section
