@@ -620,11 +620,18 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
+.authors{
+  text-align: center;
+}
 .writers{
   width: 150px;
   height: 200px;
 }
 
+#rounded_float-left{
+  margin-right: 400px;
+  margin-left: 0px;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
