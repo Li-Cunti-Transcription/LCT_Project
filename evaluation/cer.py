@@ -1,0 +1,81 @@
+import pywer
+
+references = [
+    "venno dato l'utema mano a lo quatro de la",
+"vita, è stato puosto drinto na sebetura, fora le",
+"mmura de la Cetate, dov'è no spettaffio scrit-",
+"to a na preta, che qualesevoglia femmena che",
+"'nchiarrà de chianto 'ntre ghiuorne na lancella,",
+"che llà mmedesemo stace appesa a no crocco,",
+"lo farrà resorzetare, e pigliarrà pe mmarito:",
+"e perchè è 'mpossibele, che duje uocchie omane",
+"pozzano piscioliare tanto, che facciano zeppa",
+"na lancella accossì granne, che leva miezo sta-",
+"to, si non fosse, commo aggio 'ntiso dicere,",
+"chella Geria, che se fece a Romma Fontana",
+"de lagremei io pe vedereme delleggiata, e cof-",
+"fiata da vuje, v'aggio data sta jastemma, la",
+"quale prego lo Cielo, che te venga a colà pe",
+"mmennetta de la 'ngiuria, che mm'è stata fat-",
+"ta. Accossì decenno, sfilaje pe le grade a ba-",
+"scio pe paura de quarche 'ntosa. Ma Zoza a lo",
+"mmedesemo punto rommenanno, e mmazze-",
+"canno le pparole de la Vecchia, le trasette a",
+"la cecotena, a la catarozzola, e botato no",
+"centimmolo de penziere, e no molino de dub-",
+"bie sopra sto fatto, all'utemo tirata co no",
+"straolo da chella passione, che cceca lo jodizio,"
+"e 'ncanta lo descurzo dell'ommo, pigliatose na",
+"mano de scute da li scrigne de lo Patre, se ne",
+"sfilaje fora de lo Palazzo, e tanto camminaje,",
+"che arrivaje a no Castiello de na Fata, co la",
+"quale spaporanno lo core, essa pe ccompassione",
+"de accossì bella Giovane, a la quale erano du-",
+"je sperune a ffarela precepetare, e la poca aje-",
+"tate, e l'ammore sopierchio a cosa scanosciuta,",
+"le deze na lettera de raccommannazione a na",
+"fore soja puro fatata: la quale fattole gran",
+"compremiento, la matina, quanno la notte fa"
+]
+
+hypotheses = [
+    "venno dato l'utema mano a lo quatro de la",
+"vita, è stato puosto dritto na febetura, fora le"
+"mmura de la Cetate, dov'è no spettaculo scrit-",
+"to a na preta, che qualsèvoglia femmena che",
+"'nchiarra de chianto 'ntre ghiuorne na lancella,",
+"che lla immedesemo stace appesa a no crocco,",
+"lo farà resorzetare, e pigliarra pe marito:",
+"e perchè è 'mpoffibele, che duje uocchie omane",
+"pozzano piscìliare tanto, che facciano zeppa",
+"na lancella accossì granne, che leva miezzo sta-",
+"ro, sì non fosse, commo aggio 'ntiso dicere,",
+"chella Geria, che se fece a Roma Fontana",
+"de lagreme: io pe vederrene deleggiate, e co-",
+"sfiata da vripe, v'aggio data sta jastemma, la",
+"quale prego lo Cielo, che te venga a colà pe",
+"mmenetta de la 'ngiuria, che mm'è stata fat-",
+"ta. Accossì decenno, sfijase pe le grade a ba-",
+"sficio pe paura de quarchè 'ntofa. Ma Zoza a lo",
+"mmedesemo punto rommenanno e mmrazze-",
+"canno le pparole de la Vecchia, le trasferette a",
+"la cecotena, a la catarozzola, e botato no",
+"centrimmolo de penziere, e no molino de dub-",
+"bie sopra sto fatto, all'utemo tirata co no",
+"sfraolo da chella passione, che cecca lo jodizio,",
+"e 'ncanta lo descurzio dell'ommo, pigliatose na",
+"mano de scute da li scrigne de lo Patre, se ne",
+"sfijase fora de lo Palazzo, e tanto camminaje,",
+"che arrivaje a no Castiello de na Fata, co la",
+"quale sfaporanno lo core, e sija pe ccompagnione",
+"de accossì bella Giovane, a la quale erano du-",
+"je sperune a sfirarla precipetare, e la poca aje-",
+"tate, e l'ammore sfopietrico a cosa scanosciuta,",
+"le deze na lettera de raccomannazione a na",
+"fate soja puro sfatata: la quale fattole gran",
+"comprendimento, la matina, quanno la notte fa-"
+]
+
+wer = pywer.wer(references, hypotheses)
+cer = pywer.cer(references, hypotheses)
+print(f"WER: {wer:.2f}, CER: {cer:.2f}")
