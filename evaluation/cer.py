@@ -3,7 +3,7 @@ import pywer
 references = [
 "venno dato l'utema mano a lo quatro de la",
 "vita, è stato puosto drinto na sebetura, fora le",
-"mmura de la Cetate, dov'è no spettaffio scrit-"
+"mmura de la Cetate, dov'è no spettaffio scrit-",
 "to a na preta, che qualesevoglia femmena che",
 "'nchiarrà de chianto 'ntre ghiuorne na lancella,",
 "che llà mmedesemo stace appesa a no crocco,",
@@ -24,8 +24,8 @@ references = [
 "la cecotena, a la catarozzola, e botato no",
 "centimmolo de penziere, e no molino de dub-",
 "bie sopra sto fatto, all'utemo tirata co no",
-"straolo da chella passione, che cceca lo jodizio,"
-"e 'ncanta lo descurzo dell'ommo, pigliatose na"
+"straolo da chella passione, che cceca lo jodizio,",
+"e 'ncanta lo descurzo dell'ommo, pigliatose na",
 "mano de scute da li scrigne de lo Patre, se ne",
 "sfilaje fora de lo Palazzo, e tanto camminaje,",
 "che arrivaje a no Castiello de na Fata, co la",
@@ -97,7 +97,7 @@ references = [
 
 hypotheses = [
 "venno dato l'utema mano a lo quatro de la",
-"vita, è stato puosto dritto na febetura, fora le"
+"vita, è stato puosto dritto na febetura, fora le",
 "mmura de la Cetate, dov'è no spettaculo scrit-",
 "to a na preta, che qualsèvoglia femmena che",
 "'nchiarra de chianto 'ntre ghiuorne na lancella,",
@@ -193,7 +193,7 @@ hypotheses = [
 intro = [
 "venno dato l'utema mano a lo quatro de la",
 "vita, è stato puosto drinto na sebetura, fora le",
-"mmura de la Cetate, dov'è no spettaffio scrit-"
+"mmura de la Cetate, dov'è no spettaffio scrit-",
 "to a na preta, che qualesevoglia femmena che",
 "'nchiarrà de chianto 'ntre ghiuorne na lancella,",
 "che llà mmedesemo stace appesa a no crocco,",
@@ -214,7 +214,7 @@ intro = [
 "la cecotena, a la catarozzola, e botato no",
 "centimmolo de penziere, e no molino de dub-",
 "bie sopra sto fatto, all'utemo tirata co no",
-"straolo da chella passione, che cceca lo jodizio,"
+"straolo da chella passione, che cceca lo jodizio,",
 "e 'ncanta lo descurzo dell'ommo, pigliatose na"
 "mano de scute da li scrigne de lo Patre, se ne",
 "sfilaje fora de lo Palazzo, e tanto camminaje,",
@@ -268,7 +268,7 @@ intro_transkribus = [
 
 intro_gpt = [
 "venno dato l'utema mano a lo quatro de la",
-"vita, è stato puosto dritto na febetura, fora le"
+"vita, è stato puosto dritto na febetura, fora le",
 "mmura de la Cetate, dov'è no spettaculo scrit-",
 "to a na preta, che qualsèvoglia femmena che",
 "'nchiarra de chianto 'ntre ghiuorne na lancella,",
@@ -518,4 +518,3 @@ wer_secchia_transkribus = pywer.wer(secchia, secchia_transkribus)
 cer_secchia_transkribus = pywer.cer(secchia, secchia_transkribus)
 print("Transkribus WER and CER Secchia rapita:")
 print(f"WER: {wer_secchia_transkribus:.2f}, CER: {cer_secchia_transkribus:.2f}")
-
