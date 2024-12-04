@@ -519,7 +519,20 @@ section,
   margin-bottom: 0;
   font-size: 16px;
 }
-
+.section-subtitle{
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.section-subtitle h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
