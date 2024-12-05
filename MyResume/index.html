@@ -216,7 +216,7 @@
           <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-journal-text"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="5" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="5" class="purecounter"></span>
               <p>Total transcribed pages</p>
             </div>
           </div><!-- End Stats Item -->
@@ -225,7 +225,7 @@
           <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-type"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="7376" data-purecounter-duration="5" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="6134" data-purecounter-duration="5" class="purecounter"></span>
               <p>Total transcribed words</p>
             </div>
           </div><!-- End Stats Item -->
@@ -252,56 +252,84 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Workflow</h2>
-        <p>descrizione del workflow con foto rappresentative. <br>
-        potremmo usare la linea del tempo successiva all'inizio o alla fine per fare un riassunto delle fasi principali del workflow ?</p>
+        <p>In order to create a high-quality, reliable, and valid project, it is essential to strictly adhere to a well-defined project pipeline. This pipeline includes all the crucial steps that must be successfully completed to achieve excellent results</p>
       </div><!-- End Section Title -->
-   
+     
+      <div class="container">          
+        <div class="row">
+            <div class="col">
+                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1"><a href="#taskdef">Task definition</a></p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1"><a href="#corpsele">Corpus selection</a></p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                            <div class="inner-circle"></div>
+                            <p class="h6 mt-3 mb-1"><a href="#annguide">Annotation guidelines</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
        <!-- Task defintion -->
-       <div class="section-subtitle" data-aos="fade-up">
+      <div class="section-subtitle" data-aos="fade-up">
+       <div class="section-subtitle" data-aos="fade-up" id="taskdef">
         <h2><b>Task defintion</b></h2>
         <p>tema che abbiamo scelto <br>
-          contesto in cui si colloca <br>
-          motivo della scelta di questo tema?</p>
+          contesto in cui si colloca <br></p>
+      </div><!-- End Section Task defintion -->
+
+
+      <div class="section-subtitle" data-aos="fade-up" id="corpsele">
+        <h2><b>Corpus selection</b></h2>
+        <p>Our training corpus is based on the printed edition of the collection of tales Lo cunto de li cunti, authored by the well known Neapolitan writer Giambattista Basile. In particular, we have selected Porcelli’s 1788 printed edition of this masterpiece, which is easily accessible on Europeana (link).
+          Rather than analyzing the entire work, we focused on the Introduction (titled Ntroduzzeione), which spans 11 pages, and two of the many tales in the collection: La gatta Cenerentola (9 pages) and Vardiello (8 pages).
+          We have fully transcribed the introduction and La gatta Cenerentola in their entirety, along with the first four pages of Vardiello.
+          In total, this amounts to 24 transcribed pages and approximately [insert word count] words from Lo cunto de li cunti. These transcriptions were used to build the training corpus. For validation, we automatically selected 10% of the training set, which corresponded to page 8 of the introduction and page 7 of La gatta Cenerentola.</p>
       </div><!-- End Section Task defintion -->
 
       <!-- Annotation guidelines -->
-        <div class="section-subtitle" data-aos="fade-up">
+        <div class="section-subtitle" data-aos="fade-up" id="annguide">
           <h2><b>Annotation guidelines</b></h2>
-<<<<<<< HEAD
-          <p>text</p>
-      </div><!-- End Section Annotation guidelines -->
+        </div><!-- End Section Annotation guidelines -->
 
-=======
            <!-- Section -->
-          <div class="container section-title" data-aos="fade-up">
-            <p>Since the printed texts are written in 17th-18th century neapolitan dialect, they were generally pretty well understandable. We decided to manually transcribe them using Transkribus, starting from scratch and doing most of the work without relying on any pre-existing transcriptions of the texts.</p>
-            <br>
-            <p>First, we uploaded the images of the pages from the selected collection of tales, which we had downloaded in .png format from the Europeana source previously mentioned. Then, within Transkribus, we transcribed the documents with the images displayed side by side, making the process more straightforward.</p>
-            <br>
+        <div class="container section-title" data-aos="fade-up">
+          <p>Since the printed texts are written in 17th-18th century neapolitan dialect, they were generally pretty well understandable. We decided to manually transcribe them using Transkribus, starting from scratch and doing most of the work without relying on any pre-existing transcriptions of the texts.</p>
+          <br>
+          <p>First, we uploaded the images of the pages from the selected collection of tales, which we had downloaded in .png format from the Europeana source previously mentioned. Then, within Transkribus, we transcribed the documents with the images displayed side by side, making the process more straightforward.</p>
+          <br>
           <img src="assets/img/sidebysideex.png" class="corpusimg" alt="upload">
-          </div>
         </div><!-- End Section -->
           
         <div class="container section-title" data-aos="fade-up">
-          <p>Then, we have divided and organized the text in each image into different regions and we have underlined the lines of the text with the blue base line.
-            These two passages are fundamental in order to establish the reading order of the text once it has been transcribed.</p>
+          <p>Then, we divided and organized the text in each image into different regions and underlined the lines of text with a blue baseline. These two steps are fundamental for establishing the reading order of the text once it has been transcribed.</p>
           <br>
           <img src="assets/img/regionline.png" class="corpusimg"  alt="region and base line in Transkribus"></p>
         </div><!-- End Section -->
-          
-        </div><!-- End Section Annotation guidelines -->
 
        <!-- Section -->
       <div class="container section-title" data-aos="fade-up">
-        <p>Once the document was structured with regions and base lines we started transcribing the text. In order to realize an accurate work and to have a well done, reliable and unambiguous annotated corpus we listed a detailed annotation guideline which emphasised the rules we have followed during the transcription.</p>
+        <p>Once the documents were structured with regions and baselines, we began transcribing the texts. To ensure accuracy and create a well-structured, reliable, and unambiguous annotated corpus, we developed a detailed annotation guideline that outlined the rules we followed during the transcription process.</p>
         <br>
         <p>The transcription followed the text for what concerns:</p>
       </div><!-- End Section -->
 
-<<<<<<< Updated upstream
-=======
->>>>>>> adb26449cf0d3a1804e4d41cd614f9b490b63e3f
->>>>>>> Stashed changes
       <div class="table-responsive">
         <table class="table">
             <thead>
@@ -411,11 +439,16 @@
                 </tbody>
             </table>
           </div>
-
+<br>
+<br>
           <div class="container section-title" data-aos="fade-up">
-            <p>Ground truth text</p>
+            <p>After completing the transcription of all the selected images of the texts, and before starting the training of a Text Recognition model, we assigned the transcribed pages to the Ground Truth state. The Ground Truth consists of accurate and verified reference data, including the images and their corresponding precise transcriptions, which the model will use for learning and training.<br>
+              This data is crucial for the success of the model, as machine learning statistically replicates the patterns found in the provided data.<br>
+              Once the Ground Truth pages are prepared, the next step is to train the Text Recognition model.
+            </p>
             <br>
-            <img src="assets/img/groundtruthex.png" alt="region and base line in Transkribus"></p>
+            <img src="assets/img/states.png" class="twoimg" class="rounded float-left" alt="...">
+            <img src="assets/img/groundtruthex.png" class="twoimg" class="rounded float-right"  alt="...">
           </div><!-- End Section -->
         </section>
     
