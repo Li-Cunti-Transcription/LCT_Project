@@ -432,7 +432,7 @@ h6 {
 }
 
 .page-title h1 {
-  font-size: 28px;
+  font-size: 100px;
   font-weight: 700;
   margin: 0;
 }
@@ -482,7 +482,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 40px;
+  font-size: 70px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -527,7 +527,7 @@ section,
   padding-right: 5em;
 }
 .section-subtitle h2 {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
