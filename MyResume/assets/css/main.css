@@ -527,11 +527,15 @@ section,
   padding-right: 5em;
 }
 .section-subtitle h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+}
+.corpusimg{
+  height: 300px;
+  width: auto;
 }
 /*--------------------------------------------------------------
 # Hero Section
