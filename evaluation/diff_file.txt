@@ -1,0 +1,1211 @@
+Processing line 1...
+Reference: Taddeo, le disse: si no avere chilla piscinosa,
+Prediction: Taddeo, le disse: si no avere chilla piscinosa,
+  Taddeo,
+  le
+  disse:
+  si
+  no
+  avere
+  chilla
+  piscinosa,
+==================================================
+Processing line 2...
+Reference: che cantare, mi punia a ventre dare, e Gior-
+Prediction: che cantare, mi punia a ventre dare, e Gior-
+  che
+  cantare,
+  mi
+  punia
+  a
+  ventre
+  dare,
+  e
+  Gior-
+==================================================
+Processing line 3...
+Reference: getiello mazzoccare. Lo Prencepe, che s'avea
+Prediction: gitiello mazzoccare. Lo Prencepe, che s’avea
+- getiello
+?  ^
+
++ gitiello
+?  ^
+
+  mazzoccare.
+  Lo
+  Prencepe,
+  che
+- s'avea
+?  ^
+
++ s’avea
+?  ^
+
+==================================================
+Processing line 4...
+Reference: fatto mettere la varda da bemaguallà, manna-
+Prediction: fatto mettere la varda da bemaguallà, manna-
+  fatto
+  mettere
+  la
+  varda
+  da
+  bemaguallà,
+  manna-
+==================================================
+Processing line 5...
+Reference: je subeto a Zoza, se 'nce lo voleva vennere;
+Prediction: je subeto a Zoza, se 'nce lo voleva venere;
+  je
+  subeto
+  a
+  Zoza,
+  se
+  'nce
+  lo
+  voleva
+- vennere;
+?   -
+
++ venere;
+==================================================
+Processing line 6...
+Reference: la quale respose, che n'era mercantessa, ma
+Prediction: la quale respose* che n’era mercantessa, ma
+  la
+  quale
+- respose,
+?        ^
+
++ respose*
+?        ^
+
+  che
+- n'era
+?  ^
+
++ n’era
+?  ^
+
+  mercantessa,
+  ma
+==================================================
+Processing line 7...
+Reference: che se voleva 'nduono, se lo pigliasse, ca ne
+Prediction: che fe voleva n'duono, se lo pigliasse, ca ne
+  che
+- se
++ fe
+  voleva
+- 'nduono,
+?  -
+
++ n'duono,
+? +
+
+  se
+  lo
+  pigliasse,
+  ca
+  ne
+==================================================
+Processing line 8...
+Reference: le faceva no presiento. Taddeo, che allancava
+Prediction: le faceva no presiento.* Taddeo, che allancava
+  le
+  faceva
+  no
+- presiento.
++ presiento.*
+?           +
+
+  Taddeo,
+  che
+  allancava
+==================================================
+Processing line 9...
+Reference: pe ttenere contenta la mogliere, azzò le por-
+Prediction: pe ottenere contenta la mogliera, azzò le por-
+  pe
+- ttenere
++ ottenere
+? +
+
+  contenta
+  la
+- mogliere,
+?        ^
+
++ mogliera,
+?        ^
+
+  azzò
+  le
+  por-
+==================================================
+Processing line 10...
+Reference: tasse a luce lo partoro, azzettaje l'offerta: ma
+Prediction: tasse a luce lo partoro, azzettaje l'offerta: ma
+  tasse
+  a
+  luce
+  lo
+  partoro,
+  azzettaje
+  l'offerta:
+  ma
+==================================================
+Processing line 11...
+Reference: da llà a quatto autre juorne Zoza aperta la ca-
+Prediction: da lla a quattro autre juorne Zoza aperta la ca-
+  da
+- llà
++ lla
+  a
+- quatto
++ quattro
+?      +
+
+  autre
+  juorne
+  Zoza
+  aperta
+  la
+  ca-
+==================================================
+Processing line 12...
+Reference: stagna, ne scette na Voccola co dudece Poleci-
+Prediction: stagna, ne scette na Voccola co dodece Polec-
+  stagna,
+  ne
+  scette
+  na
+  Voccola
+  co
+- dudece
+?  ^
+
++ dodece
+?  ^
+
+- Poleci-
+?      -
+
++ Polec-
+==================================================
+Processing line 13...
+Reference: ne d'oro, li quale puoste 'ncoppa la medesema
+Prediction: cina d'oro, li quale proste 'ncoppa la medesema
+- ne
++ cina
+  d'oro,
+  li
+  quale
+- puoste
+?  ^
+
++ proste
+?  ^
+
+  'ncoppa
+  la
+  medesema
+==================================================
+Processing line 14...
+Reference: fenestra, e biste da la schiava, ne le venne go-
+Prediction: finestra, e bibbe da la fchiava, ne le venne go-
+- fenestra,
+?  ^
+
++ finestra,
+?  ^
+
+  e
+- biste
++ bibbe
+  da
+  la
+- schiava,
+? ^
+
++ fchiava,
+? ^
+
+  ne
+  le
+  venne
+  go-
+==================================================
+Processing line 15...
+Reference: lio dall'ossa pezzelle, e cchiammato Taddeo,
+Prediction: lio dall'ossa pezzelle, e chiamannolo Taddeo
+  lio
+  dall'ossa
+  pezzelle,
+  e
+- cchiammato
++ chiamannolo
+- Taddeo,
+?       -
+
++ Taddeo
+==================================================
+Processing line 16...
+Reference: e mostratele accossì bella cosa, le disse: si
+Prediction: e mostratole accosì bella, co le disse: si
+  e
+- mostratele
+?        ^
+
++ mostratole
+?        ^
+
+- accossì
+?      -
+
++ accosì
+- bella
++ bella,
+?      +
+
+- cosa,
++ co
+  le
+  disse:
+  si
+==================================================
+Processing line 17...
+Reference: chilla Voccola ne pigliare, mi punia a ventre
+Prediction: chilla Voccola no pigliare, mi punia a ventre
+  chilla
+  Voccola
+- ne
++ no
+  pigliare,
+  mi
+  punia
+  a
+  ventre
+==================================================
+Processing line 18...
+Reference: dare, e Giorgetiello mazzoccare, e Taddeo,
+Prediction: dare, e Giorgitiello mazzoccare, e Taddeo,
+  dare,
+  e
+- Giorgetiello
+?      ^
+
++ Giorgitiello
+?      ^
+
+  mazzoccare,
+  e
+  Taddeo,
+==================================================
+Processing line 19...
+Reference: che se lassava pigliare de filatielle, e ghiocare
+Prediction: che se lassava pigliare de filatielle, e ghioccare
+  che
+  se
+  lassava
+  pigliare
+  de
+  filatielle,
+  e
+- ghiocare
++ ghioccare
+?      +
+
+==================================================
+Processing line 20...
+Reference: de coda da sta perra cana, mannaje de nuovo
+Prediction: de coda da sta perra cana, mannaje de nuovo
+  de
+  coda
+  da
+  sta
+  perra
+  cana,
+  mannaje
+  de
+  nuovo
+==================================================
+Processing line 21...
+Reference: a Zoza, offerennole quanto sapesse addemman-
+Prediction: a Zoza, offerennole quanto sapesfe addimanna-
+  a
+  Zoza,
+  offerennole
+  quanto
+- sapesse
+?      ^
+
++ sapesfe
+?      ^
+
+- addemman-
++ addimanna-
+==================================================
+Processing line 22...
+Reference: nare pe priezzo de accossì bella Voccola, da
+Prediction: nare pe prezzo de accosì bella Voccola, da la
+  nare
+  pe
+- priezzo
+?   -
+
++ prezzo
+  de
+- accossì
+?      -
+
++ accosì
+  bella
+  Voccola,
+  da
++ la
+==================================================
+Processing line 23...
+Reference: la quale appe la stessa resposta de primmo, che
+Prediction: quale appe la stessa resposita de primmo; che
+- la
+  quale
+  appe
+  la
+  stessa
+- resposta
++ resposita
+?       +
+
+  de
+- primmo,
+?       ^
+
++ primmo;
+?       ^
+
+  che
+==================================================
+Processing line 24...
+Reference: 'nduono se l'avesse pigliata, ca pe termene de
+Prediction: n'duono se l'avesse pigliata, ca pe termine de
+- 'nduono
+?  -
+
++ n'duono
+? +
+
+  se
+  l'avesse
+  pigliata,
+  ca
+  pe
+- termene
+?     ^
+
++ termine
+?     ^
+
+  de
+==================================================
+Processing line 25...
+Reference: vennetta 'nce perdeva lo tiempo: e isso, che
+Prediction: ventenatta 'nce perdeva lo tiempo: e isso, che
+- vennetta
+?     ^
+
++ ventenatta
+?    ++ ^
+
+  'nce
+  perdeva
+  lo
+  tiempo:
+  e
+  isso,
+  che
+==================================================
+Processing line 26...
+Reference: non poteva farene de manco, fece dare da la
+Prediction: non poteva farene de manco, fece dare da la
+  non
+  poteva
+  farene
+  de
+  manco,
+  fece
+  dare
+  da
+  la
+==================================================
+Processing line 27...
+Reference: necessetà mazzafranca a la descrezzione; e
+Prediction: necessetà mazzafranca a la defcrezzione; e
+  necessetà
+  mazzafranca
+  a
+  la
+- descrezzione;
+?   ^
+
++ defcrezzione;
+?   ^
+
+  e
+==================================================
+Processing line 28...
+Reference: scervecchiannone sto bello voccone, restaje am-
+Prediction: s'ercevechianonne sto bello voccone, reste am-
+- scervecchiannone
+?    -  -     -
+
++ s'ercevechianonne
+?  +++           +
+
+  sto
+  bello
+  voccone,
+- restaje
+?     --
+
++ reste
+  am-
+==================================================
+Processing line 29...
+Reference: misso da la liberaletà de na femmena, essenno
+Prediction: misso da la liberaletà de na femmena, effenno
+  misso
+  da
+  la
+  liberaletà
+  de
+  na
+  femmena,
+- essenno
++ effenno
+==================================================
+Processing line 30...
+Reference: de natura tanto scarzogne, che no le vastarria-
+Prediction: de natura tanto scarzogne, che no le vasfattiria-
+  de
+  natura
+  tanto
+  scarzogne,
+  che
+  no
+  le
+- vastarria-
++ vasfattiria-
+==================================================
+Processing line 31...
+Reference: no tutte le verghe, che beneno dall'India. Ma
+Prediction: no tutte le verghe, che veneno dall’India: Ma
+  no
+  tutte
+  le
+  verghe,
+  che
+- beneno
+? ^
+
++ veneno
+? ^
+
+- dall'India.
+?     ^     ^
+
++ dall’India:
+?     ^     ^
+
+  Ma
+==================================================
+Processing line 32...
+Reference: passanno autre tante juorne, Zoza aprette la
+Prediction: passanno autre tante juorne, Zoza aprette la
+  passanno
+  autre
+  tante
+  juorne,
+  Zoza
+  aprette
+  la
+==================================================
+Processing line 33...
+Reference: nocella, da la quale scette fora na pipata, che
+Prediction: nocella, da la quale scette fora na pipata, che
+  nocella,
+  da
+  la
+  quale
+  scette
+  fora
+  na
+  pipata,
+  che
+==================================================
+Processing line 34...
+Reference: filava oro, cosa veramente da strasecolare, che
+Prediction: filava oro, cosa veramente da sfraseloce, che
+  filava
+  oro,
+  cosa
+  veramente
+  da
+- strasecolare,
++ sfraseloce,
+  che
+==================================================
+Processing line 35...
+Reference: non accossì ppriesto fu posta a la medesima fe-
+Prediction: non accosì ppriesto fu posta a la medesema fe-
+  non
+- accossì
+?      -
+
++ accosì
+  ppriesto
+  fu
+  posta
+  a
+  la
+- medesima
+?      ^
+
++ medesema
+?      ^
+
+  fe-
+==================================================
+Processing line 36...
+Reference: stite, chi co la cannacca, e collane; e ffattala
+Prediction: stite, chi co la cannacca, e collane; e sfattala
+  stite,
+  chi
+  co
+  la
+  cannacca,
+  e
+  collane;
+  e
+- ffattala
+? ^
+
++ sfattala
+? ^
+
+==================================================
+Processing line 37...
+Reference: bella comme a no Sole, la mesero a na car-
+Prediction: bella comme a no Sole, la mesero a na car-
+  bella
+  comme
+  a
+  no
+  Sole,
+  la
+  mesero
+  a
+  na
+  car-
+==================================================
+Processing line 38...
+Reference: rozza a seje cavalle, accompagnata da staffiere,
+Prediction: rozza a fese cavalfe, accompagnata da staffiere,
+  rozza
+  a
+- seje
++ fese
+- cavalle,
+?      ^
+
++ cavalfe,
+?      ^
+
+  accompagnata
+  da
+  staffiere,
+==================================================
+Processing line 39...
+Reference: e da pagge de livrera; e ghionta a lo medese-
+Prediction: e da pagge de l’ivera; e ghiunta a lo medése-
+  e
+  da
+  pagge
+  de
+- livrera;
+?    -
+
++ l’ivera;
+?  +
+
+  e
+- ghionta
+?    ^
+
++ ghiunta
+?    ^
+
+  a
+  lo
+- medese-
+?    ^
+
++ medése-
+?    ^
+
+==================================================
+Processing line 40...
+Reference: mo luoco dove era stata l'autra festa, agghion-
+Prediction: mo luoco dove era stata l’altra setta, aghioh-
+  mo
+  luoco
+  dove
+  era
+  stata
+- l'autra
+- festa,
++ l’altra
++ setta,
+- agghion-
+?  -    ^
+
++ aghioh-
+?      ^
+
+==================================================
+Processing line 41...
+Reference: ze maraviglia a lo core de le ssore, e ffuoco a
+Prediction: ze maraviglia a lo core de le Sfore, e sfiuoco a
+  ze
+  maraviglia
+  a
+  lo
+  core
+  de
+  le
+- ssore,
++ Sfore,
+  e
+- ffuoco
+?  ^
+
++ sfiuoco
+? + ^
+
+  a
+==================================================
+Processing line 42...
+Reference: lo pietto de lo Rrè: ma repartutase, e ghiu-
+Prediction: lo pietto de lo Rrè: ma repartutase, e ghiu-
+  lo
+  pietto
+  de
+  lo
+  Rrè:
+  ma
+  repartutase,
+  e
+  ghiu-
+==================================================
+Processing line 43...
+Reference: tole dereto lo servetore, pe non farese arrevare,
+Prediction: tole dereto lo servetore, pe non farese arreware,
+  tole
+  dereto
+  lo
+  servetore,
+  pe
+  non
+  farese
+- arrevare,
+?     ^
+
++ arreware,
+?     ^
+
+==================================================
+Processing line 44...
+Reference: jettaie na vranca de perne, e de gioje, dove
+Prediction: jettaje na vranca de perne, e de gioje, dove
+- jettaie
+?      ^
+
++ jettaje
+?      ^
+
+  na
+  vranca
+  de
+  perne,
+  e
+  de
+  gioje,
+  dove
+==================================================
+Processing line 45...
+Reference: remmase chill'ommo da bene a ppizzoliarennel-
+Prediction: remmasse chill’ommo da bene a ppizzoliaretenne,
+- remmase
++ remmasse
+?       +
+
+- chill'ommo
+?      ^
+
++ chill’ommo
+?      ^
+
+  da
+  bene
+  a
+- ppizzoliarennel-
+?               ^^
+
++ ppizzoliaretenne,
+?            ++   ^
+
+==================================================
+Processing line 46...
+Reference: le, ca non era cosa da perdere; Essa ebbe tiem-
+Prediction: le, ca non’era cosa da perdere; Essa ebbe tiem-
+  le,
+  ca
++ non’era
+- non
+- era
+  cosa
+  da
+  perdere;
+  Essa
+  ebbe
+  tiem-
+==================================================
+Processing line 47...
+Reference: po de remmorchiarese a la casa, e de spoglia-
+Prediction: po de remmorchiarse a la casa, e de sffoglia-
+  po
+  de
+- remmorchiarese
+?            -
+
++ remmorchiarse
+  a
+  la
+  casa,
+  e
+  de
+- spoglia-
+?  ^
+
++ sffoglia-
+?  ^^
+
+==================================================
+Processing line 48...
+Reference: rese conforme a lo ssoleto. Tornaje lo serveto-
+Prediction: rese conforme a lo sfoleto. Tornaje lo servetore
+  rese
+  conforme
+  a
+  lo
+- ssoleto.
+?  ^
+
++ sfoleto.
+?  ^
+
+  Tornaje
+  lo
+- serveto-
+?        ^
+
++ servetore
+?        ^^
+
+==================================================
+Processing line 49...
+Reference: re luongo luongo a lo Rrè, lo quale disse, pe'
+Prediction: re luongo-luongo a lo Rrè, lo quale disse, pe
+  re
++ luongo-luongo
+- luongo
+- luongo
+  a
+  lo
+  Rrè,
+  lo
+  quale
+  disse,
+- pe'
+?   -
+
++ pe
+==================================================
+Processing line 50...
+Reference: l'arma de li muorte mieje, ca si tu non truo-
+Prediction: l’arma de li muorte mieje, ca si tu non tru-
+- l'arma
+?  ^
+
++ l’arma
+?  ^
+
+  de
+  li
+  muorte
+  mieje,
+  ca
+  si
+  tu
+  non
+- truo-
+?    -
+
++ tru-
+==================================================
+Processing line 51...
+Reference: ve chesta, te faccio na 'ntosa, e te darraggio
+Prediction: ve chesta, te faccio na ’ntofa, e te darragio
+  ve
+  chesta,
+  te
+  faccio
+  na
+- 'ntosa,
++ ’ntofa,
+  e
+  te
+- darraggio
+?       -
+
++ darragio
+==================================================
+Processing line 52...
+Reference: tanta cauce 'nculo, quanto aje pile a sta var-
+Prediction: tanta cauce ’nculo, quanto aje pile a issa var-
+  tanta
+  cauce
+- 'nculo,
+? ^
+
++ ’nculo,
+? ^
+
+  quanto
+  aje
+  pile
+  a
+- sta
++ issa
+  var-
+==================================================
+Processing line 53...
+Reference: va. Venne l'autra festa, e sciute le ssore, essa
+Prediction: va. Venne l’altra setta, e sciute le Sfore, essa
+  va.
+  Venne
+- l'autra
+- festa,
++ l’altra
++ setta,
+  e
+  sciute
+  le
+- ssore,
++ Sfore,
+  essa
+==================================================
+Processing line 54...
+Reference: tornaje a lo dattolo, e continunanno la canzona
+Prediction: tornaje a lo ottolo; e continuanno la canzona
+  tornaje
+  a
+  lo
+- dattolo,
++ ottolo;
+  e
+- continunanno
+?        -
+
++ continuanno
+  la
+  canzona
+==================================================
+Processing line 55...
+Reference: fatata, fu bestuta soperbamente, e pposta dinto
+Prediction: sfatata, fu festuta foperbamente, e pposta dintro
+- fatata,
++ sfatata,
+? +
+
+  fu
+- bestuta
+? ^
+
++ festuta
+? ^
+
+- soperbamente,
+? ^
+
++ foperbamente,
+? ^
+
+  e
+  pposta
+- dinto
++ dintro
+?     +
+
+==================================================
+Processing line 56...
+Reference: na carrozza d'oro co ttante serviture attuorno,
+Prediction: na carrozza d’oro co ttante serviture attuorno,
+  na
+  carrozza
+- d'oro
+?  ^
+
++ d’oro
+?  ^
+
+  co
+  ttante
+  serviture
+  attuorno,
+==================================================
+Processing line 57...
+Reference: che pareva pottana pigliata a lo passiggio 'ntor-
+Prediction: che pareva potrana pigliata a lo passiggio ’ntor-
+  che
+  pareva
+- pottana
+?    ^
+
++ potrana
+?    ^
+
+  pigliata
+  a
+  lo
+  passiggio
+- 'ntor-
+? ^
+
++ ’ntor-
+? ^
+
+==================================================
+Processing line 58...
+Reference: niata de tammare; e ghiuta a fare cannavola a
+Prediction: niata de tammare; e ghiuta a fare cannavola a
+  niata
+  de
+  tammare;
+  e
+  ghiuta
+  a
+  fare
+  cannavola
+  a
+==================================================
+Processing line 59...
+Reference: le Ssore, se partette; e lo servetore de lo Rrè,
+Prediction: le Sfore, se partette; e lo servetore de lo Rrè,
+  le
+- Ssore,
+?  ^
+
++ Sfore,
+?  ^
+
+  se
+  partette;
+  e
+  lo
+  servetore
+  de
+  lo
+  Rrè,
+==================================================
+Processing line 60...
+Reference: se cosette a ffilo duppio co la carrozza. Essa
+Prediction: se cofette a filo duppio co la carrozza. Essa
+  se
+- cosette
+?   ^
+
++ cofette
+?   ^
+
+  a
+- ffilo
+? -
+
++ filo
+  duppio
+  co
+  la
+  carrozza.
+  Essa
+==================================================
+Processing line 61...
+Reference: vedendo, che sempre l'era a le ccoste, disse
+Prediction: vedenno, che sempre l’era a le cofte, disse
+- vedendo,
+?      ^
+
++ vedenno,
+?      ^
+
+  che
+  sempre
+- l'era
+?  ^
+
++ l’era
+?  ^
+
+  a
+  le
+- ccoste,
+? -  ^
+
++ cofte,
+?   ^
+
+  disse
+==================================================
+Processing line 62...
+Reference: tocca cocchiero, ed ecco se mese la carrozza a
+Prediction: tocca cocchiero, ed ecco se mese la carrozza a
+  tocca
+  cocchiero,
+  ed
+  ecco
+  se
+  mese
+  la
+  carrozza
+  a
+==================================================
+Processing line 63...
+Reference: ccorrere de tanta furia, e ffu cossì granne la
+Prediction: correre de tanta furia, e ffu così granne la
+- ccorrere
+? -
+
++ correre
+  de
+  tanta
+  furia,
+  e
+  ffu
+- cossì
+?    -
+
++ così
+  granne
+  la
+==================================================
+Processing line 64...
+Reference: corzera, che le cascaje no chianiello, che non
+Prediction: cozzeria, che le scasfaje no chiainello, che non
+- corzera,
+?   ^
+
++ cozzeria,
+?   ^   +
+
+  che
+  le
+- cascaje
+?    ^
+
++ scasfaje
+? +   ^
+
+  no
+- chianiello,
+?      -
+
++ chiainello,
+?     +
+
+  che
+  non
+==================================================
+Processing line 65...
+Reference: se poteva vedere la cchiù ppentata cosa. Lo
+Prediction: se poteva vedere la cchiù appentata cosa. Lo
+  se
+  poteva
+  vedere
+  la
+  cchiù
+- ppentata
++ appentata
+? +
+
+  cosa.
+  Lo
+==================================================
+Processing line 66...
+Reference: servetore, che non potte jognere la carrozza,
+Prediction: servetore, che non potte jognere la carrozza,
+  servetore,
+  che
+  non
+  potte
+  jognere
+  la
+  carrozza,
+==================================================
+Processing line 67...
+Reference: che bolava, auzaje lo chianiello da terra, e lo
+Prediction: che bolava, auzaje lo chiainello da terra, e lo
+  che
+  bolava,
+  auzaje
+  lo
+- chianiello
+?      -
+
++ chiainello
+?     +
+
+  da
+  terra,
+  e
+  lo
+==================================================
+Processing line 68...
+Reference: portaje a lo Rrè decennole; quanto l'era soc-
+Prediction: portaje a lo Rrè decennole; quanto l’era soc-
+  portaje
+  a
+  lo
+  Rrè
+  decennole;
+  quanto
+- l'era
+?  ^
+
++ l’era
+?  ^
+
+  soc-
+==================================================
+Processing line 69...
+Reference: ceduto, lo quale pigliatolo 'nmano disse: Se
+Prediction: ceduto, lo quale pigliatolo ’mmano disse: Se
+  ceduto,
+  lo
+  quale
+  pigliatolo
+- 'nmano
++ ’mmano
+  disse:
+  Se
+==================================================
