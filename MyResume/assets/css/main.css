@@ -1548,7 +1548,7 @@ section,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(119, 174, 192)
+    background-color: #45505b;
 }
 
 .timeline-steps .timeline-content .inner-circle:before {
