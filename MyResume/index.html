@@ -251,7 +251,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Workflow</h2>
-        <p>In order to create a high-quality, reliable, and valid project, it is essential to strictly adhere to a well-defined project pipeline. This pipeline includes all the crucial steps that must be successfully completed to achieve excellent results</p>
+        <p>In order to create a high-quality, reliable, and valid project, it is essential to adhere to a well-defined project pipeline. This pipeline includes all the crucial steps that must be successfully completed to achieve excellent results</p>
       </div><!-- End Section Title -->
      
       <div class="container">          
@@ -299,17 +299,17 @@
           define the task clearly, ensuring a precise understanding of its scope and objectives.
           The aim of the Reliably Ever After project is to provide a comparison between the performance of Transkribus platform and ChatGPT on the transcription of printed text.
           We started this analysis and comparison from the Transkribus platform paying particular attention to the accuracy performance of a model based on the “distance” between a training set and the validation set. 
-          We continued our comparison using chatgpt. In particular we were interested in obtaining an accurate model that faithfully respects the text.  
+          We continued our comparison using chatgpt. In particular we were interested in obtaining an accurate model that respects the text faithfully.  
           Finally, we compared the results obtained by the 2 performances and commented on them.</p>
       </div><!-- End Section Task defintion -->
 
 
       <div class="section-subtitle" data-aos="fade-up" id="corpsele">
         <h2><b>Corpus selection</b></h2>
-        <p>Our training corpus is based on the printed edition of the collection of tales <i>Lo cunto de li cunti</i>, authored by the well known Neapolitan writer Giambattista Basile. In particular, we have selected Porcelli’s 1788 printed edition of this masterpiece, which is easily accessible on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0">Europeana</a>.
+        <p>Our training corpus is based on the printed edition of the collection of tales <i>Lo cunto de li cunti</i>, authored by the well known neapolitan writer Giambattista Basile. In particular, we have selected Porcelli’s 1788 printed edition of this masterpiece, which is easily accessible on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0">Europeana</a>.
           Rather than analyzing the entire work, we focused on the <i>Introduction</i> (titled <i>Ntroduzzeione</i>), which spans 11 pages, and two of the many tales in the collection: <i>La gatta Cenerentola</i> (9 pages) and <i>Vardiello</i> (8 pages).
           We have fully transcribed the introduction and <i>La gatta Cenerentola</i> in their entirety, along with the first four pages of <i>Vardiello</i>.
-          In total, this amounts to 23 transcribed pages and approximately 6134 words from <i>Lo cunto de li cunti</i>. These transcriptions were used to build the training corpus. For validation, we automatically selected 10% of the training set, which corresponded to page 8 of the <i>Introduction</i> and page 7 of <i>La gatta Cenerentola</i>.</p>
+          In total, this amounts to 23 transcribed pages and 6134 words from <i>Lo cunto de li cunti</i>. These transcriptions were used to build the training corpus. For validation, we automatically selected 10% of the training set, which corresponded to page 8 of the <i>Introduction</i> and page 7 of <i>La gatta Cenerentola</i>.</p>
       </div><!-- End Section Task defintion -->
 
       <!-- Annotation guidelines -->
@@ -362,7 +362,7 @@
                 <tr>
                     <th scope="row">Italic text</th>
                     <td><img src="assets/img/italicex.png" class="table-img" alt="Italic text example"></td>
-                    <td class="table-txt">The transcription followed the original text for what concerns italic texts. They are represented through the dedicated "<i>I</i>"" Italic tag of Transkribus.</td>
+                    <td class="table-txt">The transcription followed the original text for what concerns italic texts. They are represented through the dedicated "<i>I</i>" Italic tag of Transkribus.</td>
                 </tr>
                 <tr>
                     <th scope="row">Diacritical characters</th>
@@ -395,22 +395,22 @@
                   <tr>
                       <th scope="row">Numbers</th>
                       <td><img src="assets/img/numbersex.png" class="table-img" alt="Numbers of pages example" title="Click to zoom in!"></td>
-                      <td class="table-txt">Numbers of pages, positioned both at the top and bottom, have been ignored.
+                      <td class="table-txt">Numbers of pages, positioned at the bottom, have been ignored.
                       </td>
                   </tr>
                   <tr>
                       <th scope="row">Headers</th>
                       <td><img src="assets/img/headersex.png" class="table-img" alt="Headers example"></td>
-                      <td class="table-txt">Headers repeated on the top of each page  that follow the first page main title have been ignored since they were not crucial for our task.</td>
+                      <td class="table-txt">Headers, that appear on the top of each page, have been ignored since they repeat the main title of the work and are not crucial for our task.</td>
                   </tr>
                   <tr>
                       <th scope="row">Catch-words</th>
                       <td><img src="assets/img/catch_wordex.png" class="table-img" alt="Catch-words example"></td>
-                      <td class="table-txt">Catch-words, placed at the foot of the page, consists of one syllable or one word that anticipate the first word of the following page but they have been ignored since they didn't affect the final result.</td>
+                      <td class="table-txt">Catch-words, placed at the end of the text, have been discarded since they consist of one syllable or one word that anticipate the first word of the following page.</td>
                   <tr>
                       <th scope="row">Signature marks</th>
                       <td><img src="assets/img/signaturemarksex.png" class="table-img" alt="Signature marks example"></td>
-                      <td class="table-txt">Signature marks, located below the print space, state the sheet or the position in the entire work but they have been ignored.</td>
+                      <td class="table-txt">Signature marks, located below the print space, have not been considered since they state the sheet or the position in the entire work.</td>
                   </tr>
               </tbody>
           </table>
@@ -418,7 +418,7 @@
 <br>
           <!-- Section -->
           <div class="container section-title" data-aos="fade-up">
-            <p>However, we have employed some specific solutions for the <b>challenges</b> related to the peculiarities of both the texts:</p>
+            <p>However, we have employed some specific solutions for the <b>challenges</b> related to the peculiarities of the texts:</p>
           </div><!-- End Section -->
     
           <div class="table-responsive">
@@ -434,7 +434,7 @@
                     <tr>
                         <th scope="row">S-characters/graphemes </th>
                         <td><img src="assets/img/scharacterex.png" class="table-img" alt="S-characters/graphemes example"></td>
-                        <td class="table-txt">S-characters/graphemes were transcribed as round-s. The letter “s” can appear in different forms, such as normal and long “s” (with descender taht you can see in "stisso" in the text), which have been transcribed as normal “s”.</td>
+                        <td class="table-txt">S-characters/graphemes were transcribed as round-s. The letter “s” can appear in different forms, such as normal and long “s” (with descender, as can be seen in "stisso" in the text), which have been transcribed as normal round-s.</td>
                     </tr>
                     <tr>
                         <th scope="row">Unclear</th>
