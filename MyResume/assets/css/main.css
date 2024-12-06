@@ -290,6 +290,7 @@ h6 {
   text-align: center;
   padding-bottom: 30px;
   position: relative;
+  border-top: 2px solid #45505b;
 }
 
 .footer h3 {
@@ -518,7 +519,15 @@ section,
 .section-title p {
   margin-bottom: 0;
   font-size: 16px;
+  text-align: justify;
 }
+.section-title ul {
+  text-align: justify;
+  list-style-type: none;
+}
+/* .section-title li {
+  padding-left: 0.5em;
+} */
 .section-subtitle{
   text-align: center;
   padding-bottom: 20px;
@@ -532,6 +541,13 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+}
+.section-subtitle p, .section-subtitle ul {
+  text-align: justify;
+}
+.section-subtitle ul figure {
+  margin-left: 12%;
+  padding: 2em 0;
 }
 .corpusimg{
   height: 300px;
