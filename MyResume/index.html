@@ -418,7 +418,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Workflow</h2>
-        <p>In order to create a high-quality, reliable, and valid project, it is essential to adhere to a well-defined project baseline which includes all the crucial steps that must be successfully completed to achieve excellent results</p>
+        <p>In order to create a high-quality, reliable, and valid project, it is essential to adhere to a well-defined project baseline which includes all the crucial steps that must be successfully completed to achieve excellent results.</p>
       </div><!-- End Section Title -->
      
       <div class="container">          
@@ -463,18 +463,19 @@
        <div class="section-subtitle" data-aos="fade-up" id="taskdef">
         <h2><b>Task defintion</b></h2>
         <p>First and foremost, it is crucial to define the task of the project clearly, ensuring a precise understanding of its scope and objectives.
-          The primary goal of the Reliably Ever After project is to train a model capable of faithfully transcribing the text as it appears on the printed page. Additionally, it seeks to compare the transcription performance of the Transkribus platform with that of ChatGPT.
-          The analysis starts with the Transkribus platform, employing an annotated corpus as a training set and a raw corpus for evaluation. The focus then shifts to ChatGPT, directly instructing it to produce an accurate transcription of the raw test set.
+          The primary goal of the <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> project is to <b>train a model capable of faithfully transcribing the text</b> as it appears on the printed page. Additionally, it seeks to compare the transcription performance of the Transkribus platform with that of ChatGPT.
+          The analysis starts with the <b>Transkribus</b> platform, employing an annotated corpus as a training set and a raw corpus for evaluation. The focus then shifts to <b>ChatGPT</b>, directly instructing it to produce an accurate transcription of the raw test set.
           Finally, the results from both transcriptions are compared and discussed in detail.</p>
       </div><!-- End Section Task defintion -->
 
 
       <div class="section-subtitle" data-aos="fade-up" id="corpsele">
         <h2><b>Corpus selection</b></h2>
-        <p>Our training corpus is based on the printed edition of the collection of tales <i>Lo cunto de li cunti</i>, authored by the well known neapolitan writer Giambattista Basile. In particular, we have selected Porcelli’s 1788 printed edition of this masterpiece, which is easily accessible on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0">Europeana</a>.
-          Rather than analyzing the entire work, we focused on the <i>Introduction</i> (titled <i>Ntroduzzeione</i>), which spans 11 pages, and two of the many tales in the collection: <i>La gatta Cenerentola</i> (9 pages) and <i>Vardiello</i> (8 pages).
-          We have fully transcribed the introduction and <i>La gatta Cenerentola</i> in their entirety, along with the first four pages of <i>Vardiello</i>.
-          In total, this amounts to 23 transcribed pages and 6134 words from <i>Lo cunto de li cunti</i>. These transcriptions were used to build the training corpus. For validation, we automatically selected 10% of the training set, which corresponded to page 8 of the <i>Introduction</i> and page 7 of <i>La gatta Cenerentola</i>.</p>
+        <p><b>Our training corpus</b> is based on the printed edition of <i>Lo cunto de li cunte</i> a celebrated collection of tales by the Neapolitan writer Giambattista Basile. In particular, we selected Porcelli's 1788 printed edition of this masterpiece, which is readily available on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0" target="_blank">Europeana</a>. <br>
+          Rather than working with the entire text, we focused on the <i>Introduction</i> (titled <i>Ntroduzzeione</i>), spanning 11 pages, and two of the collection's tales: <i>La gatta Cenerentola</i> (9 pages) and <i>Vardiello</i> (8 pages). We fully transcribed the <i>Introduction</i> and <i>La gatta Cenerentola</i> in their entirety, along with the first three pages of <i>Vardiello</i>. <br>
+          In total, this amounts to 23 transcribed pages and  6134 words from <i>Lo cunto de li cunti</i>. These transcriptions were used to build the training corpus.
+          <b>Our raw test set</b> is based on another tale from <i>Lo cunto de li cunte</i>, titled <i>La vecchia scoperta</i>. <br>
+          Unlike the training corpus, these pages were not manually transcribed by us. Instead, they were transcribed by the best-performing model generated during the Text Recognition Model and by ChatGPT.</p>
       </div><!-- End Section Task defintion -->
 
       <!-- Annotation guidelines -->
@@ -484,7 +485,7 @@
 
            <!-- Section -->
         <div class="container section-title" data-aos="fade-up">
-          <p>Since the printed texts are written in 17th-18th century neapolitan dialect, they were generally pretty well understandable. We decided to manually transcribe them using Transkribus, starting from scratch and doing most of the work without relying on any pre-existing transcriptions of the texts.</p>
+          <p>Since the printed texts in the images are written in <b>17th-18th century neapolitan dialect</b>, they were generally pretty well understandable. We decided to <b>manually transcribe</b> them using Transkribus, starting from scratch and doing most of the work without relying on any pre-existing transcriptions of the texts.</p>
           <br>
           <p>First, we uploaded the images of the pages from the selected collection of tales, which we had downloaded in .png format from the Europeana source previously mentioned. Then, within Transkribus, we transcribed the documents with the images displayed side by side, making the process more straightforward.</p>
           <br>
@@ -492,16 +493,17 @@
         </div><!-- End Section -->
           
         <div class="container section-title" data-aos="fade-up">
-          <p>Then, we divided and organized the text in each image into different regions and underlined the lines of text with a blue baseline. These two steps are fundamental for establishing the reading order of the text once it has been transcribed.</p>
+          <p>Then, we divided and organized the <a style="color: green;"><b>text</b></a> in each image into different green regions and underlined the <a style="color: blue;"><b>lines</b></a> of text with a blue baseline. <br>
+            These two steps are fundamental for establishing the reading order of the text once it has been transcribed.</p>
           <br>
           <img src="assets/img/regionline.png" class="corpusimg"  alt="region and base line in Transkribus"></p>
         </div><!-- End Section -->
 
        <!-- Section -->
       <div class="container section-title" data-aos="fade-up">
-        <p>Once the documents were structured with regions and baselines, we began transcribing the texts. To ensure accuracy and create a well-structured, reliable, and unambiguous annotated corpus, we developed a detailed annotation guideline that outlined the rules we followed during the transcription process.</p>
+        <p>Once the texts were structured with regions and baselines, we began transcribing them. To ensure accurate work and create a reliable, well-executed, and unambiguous annotated corpus, we developed a detailed <b>annotation guideline</b> that emphasized the rules we followed during the transcription process.</p>
         <br>
-        <p>The transcription followed the text for what concerns:</p>
+        <p>The transcription <b>followed the text</b> for what concerns:</p>
       </div><!-- End Section -->
 
       <div class="table-responsive">
@@ -532,11 +534,11 @@
                 <tr>
                     <th scope="row">Diacritical characters</th>
                     <td><img src="assets/img/diacriticalcharactersex.png" class="table-img" alt="Diacritical characters example"></td>
-                    <td class="table-txt">All the accents have been transcribed according to the original text (such as "perchè").</td>
+                    <td class="table-txt">All the accents have been transcribed according to the original text (such as "farrà", "perchè" and "accossì").</td>
                 <tr>
                     <th scope="row">Hyphenated words</th>
                     <td><img src="assets/img/hyphenatedex.png" class="table-img" alt="Hyphenated words example"></td>
-                    <td class="table-txt">Hyphenated words that appeared at the end of the line have been transcribed by breaking them up according to the original text. This means that they were graphically represented by adding a “-” at the end of the line only if present.</td>
+                    <td class="table-txt">Hyphenated words that appear at the end of the line have been transcribed by breaking them up according to the original text. This means that they were graphically represented by adding a “-” at the end of the line only if present.</td>
                 </tr>
             </tbody>
         </table>
@@ -558,24 +560,24 @@
               </thead>
               <tbody>
                   <tr>
-                      <th scope="row">Numbers</th>
+                      <th scope="row">Page numbers</th>
                       <td><img src="assets/img/numbersex.png" class="table-img" alt="Numbers of pages example" title="Click to zoom in!"></td>
-                      <td class="table-txt">Numbers of pages, positioned at the bottom, have been ignored.
+                      <td class="table-txt">Page numbers, positioned at the bottom, have been ignored.
                       </td>
                   </tr>
                   <tr>
                       <th scope="row">Headers</th>
                       <td><img src="assets/img/headersex.png" class="table-img" alt="Headers example"></td>
-                      <td class="table-txt">Headers, that appear on the top of each page, have been ignored since they repeat the main title of the work and are not crucial for our task.</td>
+                      <td class="table-txt">Headers, that repat the main title of the tale and appear on the top of each page, have not been considered.</td>
                   </tr>
                   <tr>
                       <th scope="row">Catch-words</th>
                       <td><img src="assets/img/catch_wordex.png" class="table-img" alt="Catch-words example"></td>
-                      <td class="table-txt">Catch-words, placed at the end of the text, have been discarded since they consist of one syllable or one word that anticipate the first word of the following page.</td>
+                      <td class="table-txt">Catch-words, which are placed at the end of the text and consist of one syllable or one word that anticipate the first word of the following page, have been discarded.</td>
                   <tr>
                       <th scope="row">Signature marks</th>
                       <td><img src="assets/img/signaturemarksex.png" class="table-img" alt="Signature marks example"></td>
-                      <td class="table-txt">Signature marks, located below the print space, have not been considered since they state the sheet or the position in the entire work.</td>
+                      <td class="table-txt">Signature marks, which are located below the print space and state the sheet or the position in the entire work have not been taken into consideration.</td>
                   </tr>
               </tbody>
           </table>
@@ -608,7 +610,7 @@
                     <tr>
                         <th scope="row">Gap</th>
                         <td><img src="assets/img/gapex.png" class="table-img" alt="Gap example"></td>
-                        <td class="table-txt">Missing letters and words that left empty spaces have been highlighted with the dedicated “gap” tag provided by Transkribus.</td>
+                        <td class="table-txt">Missing letters and words that left empty spaces have been marked with the dedicated “gap” tag provided by Transkribus.</td>
                     </tr>
                 </tbody>
             </table>
@@ -616,10 +618,10 @@
 <br>
 <br>
           <div class="container section-title" data-aos="fade-up">
-            <p>After completing the transcription of all the selected images of the texts, and before starting the training of a Text Recognition model, we assigned the transcribed pages to the Ground Truth state. The Ground Truth consists of accurate and verified reference data, including the images and their corresponding precise transcriptions, which the model will use for learning and training.<br>
-              This data is crucial for the success of the model, as machine learning statistically replicates the patterns found in the provided data.<br>
-              Once the Ground Truth pages are prepared, the next step is to train the Text Recognition model.
-            </p>
+            <p>After completing the transcription of all the selected images of the texts, and before starting the training of a Text Recognition model, we assigned the transcribed pages to the <b>Ground Truth</b> state. <br>
+              The Ground Truth consists of <b>accurate and verified reference data</b>, including the images and their corresponding precise transcriptions, which the model will use for learning and training.
+              This data is crucial for the success of the model, as machine learning statistically replicates the patterns found in the provided data.
+              Once the Ground Truth pages are prepared, the next step is to train the <a href="#evaluation">Text Recognition model</a>.</p>
             <br>
             <img src="assets/img/states.png" class="twoimg" class="rounded float-left" alt="transkribus states">
             <img src="assets/img/groundtruthex.png" class="twoimg" class="rounded float-right"  alt="ground truth">
@@ -633,9 +635,10 @@
 
        <!-- Section -->
     <div class="container section-title" data-aos="fade-up">
-      <p>We continued our analysis using ChatGPT.
-        For this step, we provided ChatGPT with the selected images of the texts. However, unlike our approach with Transkribus, we cropped the images to include only the text, omitting headers, page numbers, and signature marks. This was done in order to ensure that the input images were as simple and clear as possible for transcription. <br>
-        Additionally, we instructed ChatGPT to transcribe the text from the input images while preserving the original line breaks.</p>
+      <p>We proceeded with our analysis by using <b>ChatGPT</b>. <br>
+        In this phase, we provided ChatGPT with images of the printed text from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, which serves as our raw test set. We tasked ChatGPT with transcribing these images. <br>
+        In line with the approach we used in Transkribus, we didn’t crop the images, deliberately including headers, page numbers, and signature marks to preserve the resolution and integrity of the images. 
+        Subsequently, we instructed ChatGPT to transcribe the text from the input images while preserving the original <a href="#gptpr">line breaks and omitting unnecessary elements</a>.</p>
         <br>
       <img src="assets/img/gpt_prompt_1.png" class="corpusimg" alt="gpt prompt">
     </div><!-- End Section -->
@@ -743,7 +746,7 @@
         <p>Unlike Pylaia models, Super Models are transformer-based and able to deal with both printed and handwritten text. As explained in Transkribus documentation, these models consist of both an optical part for image processing and a language model which can handle different languages from different times. As example of Language Model, Super Models are closer to ChatGPT for kind of training and functioning, so we thought it would be interesting to evaluate their performance on the selected text as well and to later compare it with GPT's automatic transcription. Though Italian texts where not part of the training set, the most comprehensive model was <b>Text Titan I</b>, supposedly efficient for both handwritten and printed texts and trained on a corpus that spans from XVI to XXI century.</p>
       </div><!-- End Section Title -->
 
-      <div class="section-subtitle justify-content-center" data-aos="fade-up">
+      <div class="section-subtitle justify-content-center" data-aos="fade-up" id="gptpr">
         <h2>ChatGPT</h2>
         <p>Our next step was to prompt ChatGPT by presenting it the same pages used for testing Transkribus' fine-tuned model. As shown in the following figure, the first transcription provided by GPT took into account <b>page numbers</b> and <b>catch-words</b> and <b>collapsed line breaks</b>.</p>
         <figure><img src="assets/img/gpt_2.png" alt="gpt-transcription-2" style="height: 300px;"><figcaption><i>Fig. 5.3</i> ChatGPT's automatic transcription after the first prompt</figcaption></figure>
