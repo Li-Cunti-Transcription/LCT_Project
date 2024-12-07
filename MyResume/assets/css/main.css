@@ -823,13 +823,22 @@ section,
 # Decorazioni
 --------------------------------------------------------------*/
 .decorated-title {
-  text-align: center;
-  font-family: 'Fleur de Leah', serif;
+  display: flex;
+  align-items: center; /* Allinea verticalmente il testo e le immagini */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  gap: 10px; /* Spaziatura tra immagini e titolo */
 }
 
-.decorated-title i {
-  color: #8B0000; /* Colore medievale */
-  margin: 0 10px; /* Spaziatura */
+.decorated-title h2 {
+  font-size: 2rem; /* Regola la dimensione del testo */
+  font-weight: bold; /* Grassetto */
+  margin: 0; /* Rimuove margini extra */
+}
+
+.cornice {
+  height: 100%; /* Regola l'altezza in base al contenitore */
+  max-height: 4rem; /* Assicurati che sia proporzionato al testo */
+  width: auto; /* Mantiene le proporzioni */
 }
 
 /*--------------------------------------------------------------
