@@ -546,12 +546,18 @@ section,
   text-align: justify;
 }
 .section-subtitle ul figure {
-  margin-left: 12%;
   padding: 2em 0;
 }
 .corpusimg{
   height: 300px;
   width: auto;
+}
+.img-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-container img {
+  margin: 0.5em 0.5em;
 }
 /*--------------------------------------------------------------
 # Hero Section

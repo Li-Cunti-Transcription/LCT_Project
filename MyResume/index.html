@@ -714,7 +714,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Evaluation</h2>
-          <p>Once the Ground Truth text for our corpus was ready, with proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
+          <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
           <div class="img-container d-flex justify-content-center py-3"><figure><img src="assets/img/learning_curve_basile.png" alt="Basile Printed Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed</figcaption></figure><figure><img src="assets/img/learning_curve_basile_base_model.png" alt="Basile Printed fine-tuned Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed with base model</figcaption></figure></div>
           <p>The charts show the percentage of error (on the y-axis) for both the training and the validation set over the epochs (x-axis). Transkribus' default paramethers were adopted for the training of both the models: the number of epochs was set to 100 and the early stoppings to 20. As shown in the figures above, the first model stopped the training after 87 epochs, since there was no further improvement on the CER, while the second one stopped after 96 epochs. </p>
           <p>The fine-tuned model was then used to automatically transcribe our test set, for which we chose a selection of pages from a fourth tale included in <i>Lo Cunto de li Cunte</i>, namely <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the results.</p>
@@ -726,26 +726,53 @@
         <h3>Custom Model</h3>
         <p>As mentioned in the <a href="#workflow">Workflow</a> section, our main goal was to train a model able to faithfully transcribe the text as printed on the page, with the only disclaimer of the normalization of s-graphemes, that the model should therefore have been able to interpret correctly by the end of the training. As consistenly used throughout the edition, we also decided to tag italic text as such, but the ability of the model to identify and mark the text was not our primary concern as not relevant for the performance evaluation comparison.</p>
         <p>Given that, according to <a href="https://help.transkribus.org/character-error-rate-and-learning-curve" target="_blank">Transkribus documentation</a>, a model for printed text with a CER on the validation set between 0.5% and 2% is believed to be very efficient, we can consider both the trained model highly performing. As mentioned above, however, we selected <b>Basile Printed_fine-tuned</b> for automatically transcribing the pages from <i>La vecchia scoperta</i>. Based on the transcription of unseen pages, we can say that:
-          <ul>
+          <ul class="justify-content-center">
             <li><b>Overall transcription</b>: the transcription needed few corrections, mainly on those sections of the page there were not part of the validation set - like the <b>headings</b> that introduce each tale - or more complex elements, like <b>drop-caps</b>. Text Recognition Models can be applied with or without a previous layout recognition. In our case, the direct application of the text recognition model caused the recognition and transcription of page numbers and catch-words, so, in order to consistently identify regions, it was necessary to perform a manual segmentation and re-apply the Text Recognition Model on the segmented pages.</li>
-            <figure><img src="assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.1</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
+            <figure id="figure-5.1"><img src="assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.1</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
             <li><b>S-graphemes normalization</b>: the model correctly identified and transcribed the majority of s-graphemes.</li>
-            <figure><img src="assets/img/basile_vecchia_scoperta_2.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.2</i> The page shows the correct and incorrect transcriptions of s-graphemes performed by our custom model</figcaption></figure>
-            <li><b>Tags for italic text</b>: as shown in <i>Fig. 5.1</i>, the model wasn't able to tag italic text.</li>
+            <figure><img src="assets/img/basile_vecchia_scoperta_2.png" alt="Vecchia Scoperta Transkribus Transcription-page 118" style="height: 350px;"><figcaption><i>Fig. 5.2</i> The page shows the correct and incorrect transcriptions of s-graphemes performed by our custom model</figcaption></figure>
+            <li><b>Tags for italic text</b>: as shown in <a href="#figure-5.1"><i>Fig. 5.1</i></a>, the model wasn't able to tag italic text.</li>
           </ul>
         </p>
         <h3>Super Model</h3>
-        <p>Unlike Pylaia models, Super Models are transformer-based and able to deal with both printed and handwritten text. As explained in Transkribus documentation, these models consist of both an optical part for image processing and a language model which can handle different languages from different times. As example of Language Model, Super Models are closer to ChatGPT for kind of training and functioning, so we thought it would be interesting to evaluate their performance on the selected text as well and to later compare it with GPT's automatic transcription. Though Italian texts where not part of the training set, the most comprehensive model was Text Titan I, supposedly efficient for both handwritten and printed texts and trained on a corpus that spans from XVI to XXI century.</p>
+        <p>Unlike Pylaia models, Super Models are transformer-based and able to deal with both printed and handwritten text. As explained in Transkribus documentation, these models consist of both an optical part for image processing and a language model which can handle different languages from different times. As example of Language Model, Super Models are closer to ChatGPT for kind of training and functioning, so we thought it would be interesting to evaluate their performance on the selected text as well and to later compare it with GPT's automatic transcription. Though Italian texts where not part of the training set, the most comprehensive model was <b>Text Titan I</b>, supposedly efficient for both handwritten and printed texts and trained on a corpus that spans from XVI to XXI century.</p>
       </div><!-- End Section Title -->
 
-      <div class="section-subtitle" data-aos="fade-up">
+      <div class="section-subtitle justify-content-center" data-aos="fade-up">
         <h2>ChatGPT</h2>
-        <p>Our next step was to prompt ChatGPT by presenting it the same pages used for evaluating Transkribus' fine-tuned model performance.</p>
+        <p>Our next step was to prompt ChatGPT by presenting it the same pages used for testing Transkribus' fine-tuned model. As shown in the following figure, the first transcription provided by GPT took into account <b>page numbers</b> and <b>catch-words</b> and <b>collapsed line breaks</b>.</p>
+        <figure><img src="assets/img/gpt_2.png" alt="gpt-transcription-2" style="height: 300px;"><figcaption><i>Fig. 5.3</i> ChatGPT's automatic transcription after the first prompt</figcaption></figure>
+        <p>In a following phase we asked ChatGPT to preserve line breaks in the transcription and, in order to obtain a transcription compliant with our annotation guidelines, to ignore page numbers, catch-words and, where needed, running titles.</p>
+        <div class="img-container d-flex">
+          <figure><img src="assets/img/gpt_3.png" alt="gpt-transcription-3" style="height: 200px;"><figcaption><i>Fig. 5.4</i> Transcription without page numbers, catch-words and with line breaks preserved</figcaption></figure>
+          <figure><img src="assets/img/gpt_4.png" alt="gpt-transcription-4" style="height: 200px;"><figcaption><i>Fig. 5.5</i> Application of the same criteria to the following page</figcaption></figure>
+          <figure><img src="assets/img/gpt_5.png" alt="gpt-transcription-5" style="height: 200px;"><figcaption><i>Fig. 5.6</i> Transcription without running titles</figcaption></figure>
+        </div>
+        <p>A quick analysis of the transcription provided by ChatGPT shows that, unlike Transkribus' model, there wasn't any difficulty in the transcription of headings, while the most troublesome element, as expected, is represented by the normalization of s-graphemes.</p>
       </div><!-- End Section Title -->
 
       <div class="section-subtitle" data-aos="fade-up">
         <h2>Results</h2>
-        <p>confronto?</p>
+        <p>In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we computed the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription, using the Python library <code>pywer</code>. The results, presented in the table below, show a better performance for the trained custom model:
+        <table class="table">
+          <tr>
+          <th></th>
+          <th>WER</th>
+          <th>CER</th>
+          </tr>
+          <tr>
+            <td>Basile Printed_fine-tuned</td>
+            <td>2.18</td>
+            <td>0.47</td>
+          </tr>
+          <tr>
+            <td>ChatGPT</td>
+            <td>24.65</td>
+            <td>5.45</td>
+          </tr>
+        </table>
+        </p>
+        <p></p>
       </div><!-- End Section Title -->
 
     </section><!-- /Services Section -->
