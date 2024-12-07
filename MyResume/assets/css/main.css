@@ -822,15 +822,7 @@ section,
 /*--------------------------------------------------------------
 # Decorazioni
 --------------------------------------------------------------*/
-.decorated-title {
-  text-align: center;
-  font-family: 'Fleur de Leah', serif;
-}
 
-.decorated-title i {
-  color: #8B0000; /* Colore medievale */
-  margin: 0 10px; /* Spaziatura */
-}
 
 /*--------------------------------------------------------------
 # Portfolio Section
