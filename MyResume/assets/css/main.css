@@ -845,8 +845,8 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
+  padding: 8px 10px 10px 10px;
+  margin: 5px;
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
@@ -885,26 +885,34 @@ section,
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 12px;
-  right: 12px;
+  left: 5px;
+  right: 5px;
   bottom: -100%;
   z-index: 3;
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
-  padding: 15px;
+  padding: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.portfolio img {
+  width: 260px;
+  height: 430px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   font-weight: 600;
-  padding-right: 50px;
+  padding-right: 10px;
+  margin: 5px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
-  padding-right: 50px;
+  padding-right: 0px;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -932,6 +940,7 @@ section,
   opacity: 1;
   bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1596,5 +1605,9 @@ section,
 --------------------------------------------------------------*/
 .twoimg{
   height: 90px;
+  width: auto;
+}
+.imgdim{
+  height: 10px;
   width: auto;
 }
