@@ -837,7 +837,7 @@ section,
 }
 
 .decorated-title h2 {
-  font-size: 6rem; /* Regola la dimensione del testo */
+  font-size: 5rem; /* Regola la dimensione del testo */
   font-weight: bold; /* Grassetto */
   margin: 0; /* Rimuove margini extra */
 }
