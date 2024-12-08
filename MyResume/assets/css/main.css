@@ -831,20 +831,24 @@ section,
 .decorated-title {
   display: flex;
   align-items: center; /* Allinea verticalmente il testo e le immagini */
-  justify-content: center; /* Centra il contenuto orizzontalmente */
-  gap: 10px; /* Spaziatura tra immagini e titolo */
+  justify-content: space-between; /* Spinge le immagini ai bordi */
+  position: relative; /* Necessario per il contenitore */
+  width: 100%; /* Occupa l'intera larghezza del contenitore */
 }
 
 .decorated-title h2 {
-  font-size: 2rem; /* Regola la dimensione del testo */
+  font-size: 6rem; /* Regola la dimensione del testo */
   font-weight: bold; /* Grassetto */
   margin: 0; /* Rimuove margini extra */
 }
 
 .cornice {
   height: 100%; /* Regola l'altezza in base al contenitore */
-  max-height: 4rem; /* Assicurati che sia proporzionato al testo */
-  width: auto; /* Mantiene le proporzioni */
+  max-height: 2rem; /* Assicurati che sia proporzionato al testo */
+  width: 33%; /* Aumenta la larghezza dell'immagine in base alla larghezza del contenitore */
+  min-width: 300px; /* Assicura una larghezza minima per schermi piccoli */
+  /* Mantieni proporzioni */
+  padding-left: 10px; /* Opzionale: aggiunge spaziatura interna per evitare sovrapposizioni */
 }
 
 /*--------------------------------------------------------------
