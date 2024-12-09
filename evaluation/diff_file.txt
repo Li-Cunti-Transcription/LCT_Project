@@ -1,6 +1,7 @@
 Processing line 1...
 Reference: LA VECCHIA SCOPERTA
 Prediction: LA VECCHIA SCOPERTA
+
   LA
   VECCHIA
   SCOPERTA
@@ -8,26 +9,34 @@ Prediction: LA VECCHIA SCOPERTA
 Processing line 2...
 Reference: TRATTENEMIENTO X.
 Prediction: TRATTENEMIENTO X.
+
   TRATTENEMIENTO
   X.
 ==================================================
 Processing line 3...
 Reference: De la Jornata I.
 Prediction: De la Jornata I.
+
   De
   la
   Jornata
   I.
 ==================================================
 Processing line 4...
-Reference: LO Rrè de Rocoaforte se nnammora de la
+Reference: LO Rrè de Roccaforte se nnammora de la
 Prediction: Lo Rré de Rocoaforte se 'nnammora de la
+
 - LO
 - Rrè
 + Lo
 + Rré
   de
-  Rocoaforte
+- Roccaforte
+?    ^
+
++ Rocoaforte
+?    ^
+
   se
 - nnammora
 + 'nnammora
@@ -39,6 +48,7 @@ Prediction: Lo Rré de Rocoaforte se 'nnammora de la
 Processing line 5...
 Reference: voce de na vecchia: e gabbato da no di-
 Prediction: voce de na vecchia: e gabbato da no di-
+
   voce
   de
   na
@@ -52,6 +62,7 @@ Prediction: voce de na vecchia: e gabbato da no di-
 Processing line 6...
 Reference: to rezocato, la fa dormire cod'isso; ma addo-
 Prediction: ro rezocato, la fa dormire cod’ isso; ma addo-
+
 - to
 + ro
   rezocato,
@@ -67,6 +78,7 @@ Prediction: ro rezocato, la fa dormire cod’ isso; ma addo-
 Processing line 7...
 Reference: natose de le rechieppe, la fa jettare pe na fe-
 Prediction: natose de le rechieppe, la fa jettare pe na fe-
+
   natose
   de
   le
@@ -81,6 +93,7 @@ Prediction: natose de le rechieppe, la fa jettare pe na fe-
 Processing line 8...
 Reference: nestra, e restanno appesa a n'arvolo è ffatata
 Prediction: nestra, e restanno appesa a ’n arbolo è ffatata
+
   nestra,
   e
   restanno
@@ -95,6 +108,7 @@ Prediction: nestra, e restanno appesa a ’n arbolo è ffatata
 Processing line 9...
 Reference: da sette Fate, e deventata na bellissima gio-
 Prediction: da sette Fate, e deventata na bellissima gio-
+
   da
   sette
   Fate,
@@ -107,6 +121,7 @@ Prediction: da sette Fate, e deventata na bellissima gio-
 Processing line 10...
 Reference: vane, lo Rrè se la piglia pe mogliere: ma l'
 Prediction: vane, lo Rré se la piglia pe mogliere: ma l’
+
   vane,
   lo
 - Rrè
@@ -123,6 +138,7 @@ Prediction: vane, lo Rré se la piglia pe mogliere: ma l’
 Processing line 11...
 Reference: autra sore mmediosa de la fortuna soja pe ffa-
 Prediction: autra sore mmediosa de la fortuna soja pe ffa-
+
   autra
   sore
   mmediosa
@@ -136,6 +152,7 @@ Prediction: autra sore mmediosa de la fortuna soja pe ffa-
 Processing line 12...
 Reference: rese bella, se fa scortecare, e mmore.
 Prediction: se bella, se fa scortecare, e mmore.
+
 - rese
 + se
   bella,
@@ -148,6 +165,7 @@ Prediction: se bella, se fa scortecare, e mmore.
 Processing line 13...
 Reference: No nce fu perzona, a chi n'avesse piaciuto
 Prediction: No nce fu perzona, a chi n’ avesse piaciuto
+
   No
   nce
   fu
@@ -164,6 +182,7 @@ Prediction: No nce fu perzona, a chi n’ avesse piaciuto
 Processing line 14...
 Reference: lo cunto de Ciommetella, ed appero no gusto
 Prediction: lo cunto de Ciommetella, ed appero no gusto
+
   lo
   cunto
   de
@@ -176,6 +195,7 @@ Prediction: lo cunto de Ciommetella, ed appero no gusto
 Processing line 15...
 Reference: a doje sole, vedenno liberato Canneloro, e cca-
 Prediction: a doje sole, vedenno liberato Cannelore, e cca-
+
   a
   doje
   sole,
@@ -193,6 +213,7 @@ Prediction: a doje sole, vedenno liberato Cannelore, e cca-
 Processing line 16...
 Reference: sticato l'Uorco, che ffaceva tanto streverio de
 Prediction: sticato l’ Uorco, che ffaceva tanto streverio de
+
   sticato
 + l’
 - l'Uorco,
@@ -208,6 +229,7 @@ Prediction: sticato l’ Uorco, che ffaceva tanto streverio de
 Processing line 17...
 Reference: li povere cacciature; e 'ntimato l'ordene a
 Prediction: li povere cacciature; e n’timato l’ ordene a
+
   li
   povere
   cacciature;
@@ -228,6 +250,7 @@ Prediction: li povere cacciature; e n’timato l’ ordene a
 Processing line 18...
 Reference: Ghiacova, che seggellasse co l'arme soje sta
 Prediction: Ghiacova, che seggellasse co l’ arme soje sta
+
   Ghiacova,
   che
   seggellasse
@@ -243,6 +266,7 @@ Prediction: Ghiacova, che seggellasse co l’ arme soje sta
 Processing line 19...
 Reference: lettera de trattenemiento, essa cossì trascorre.
 Prediction: lettera de trattenemiento, essa cossì trascorre.
+
   lettera
   de
   trattenemiento,
@@ -253,6 +277,7 @@ Prediction: lettera de trattenemiento, essa cossì trascorre.
 Processing line 20...
 Reference: LO 'mmarditto vizio 'ncrastato co nnuje autre
 Prediction: O 'mmarditto vizio 'neraftato co nnuje autre
+
 - LO
 + O
   'mmarditto
@@ -270,6 +295,7 @@ Prediction: O 'mmarditto vizio 'neraftato co nnuje autre
 Processing line 21...
 Reference: femmene de parere belle, nce redduce a
 Prediction: femmene de parete belle, nce redduce a
+
   femmene
   de
 - parere
@@ -286,6 +312,7 @@ Prediction: femmene de parete belle, nce redduce a
 Processing line 22...
 Reference: termene tale che pe nnaurare la cornice de la
 Prediction: termene tale che pe nnaurare la cornice de la
+
   termene
   tale
   che
@@ -299,6 +326,7 @@ Prediction: termene tale che pe nnaurare la cornice de la
 Processing line 23...
 Reference: fronte, guastammo lo quatro de la facce; pe
 Prediction: fronte, guastammo lo quatro de la facce; pe
+
   fronte,
   guastammo
   lo
@@ -311,6 +339,7 @@ Prediction: fronte, guastammo lo quatro de la facce; pe
 Processing line 24...
 Reference: ghianchejare le ppellecchie de la carne, roi-
 Prediction: ghianchejare le ppellecchie de la carne, roi-
+
   ghianchejare
   le
   ppellecchie
@@ -322,6 +351,7 @@ Prediction: ghianchejare le ppellecchie de la carne, roi-
 Processing line 25...
 Reference: nammo ll'ossa de li diente, e ppe ddare lu-
 Prediction: nammo l’ ofsa de li diente, e ppe ddare lu-
+
   nammo
 - ll'ossa
 + l’
@@ -337,6 +367,7 @@ Prediction: nammo l’ ofsa de li diente, e ppe ddare lu-
 Processing line 26...
 Reference: ce a li miembre, coprimmo d'ombre la vi-
 Prediction: ce a li miembre, coprimmo d’ ombre la vi-
+
   ce
   a
   li
@@ -353,6 +384,7 @@ Prediction: ce a li miembre, coprimmo d’ ombre la vi-
 Processing line 27...
 Reference: sta, che nnanze l'ora de dare tributo a lo
 Prediction: sta, che nnanze l’ ora de dare tributo a lo
+
   sta,
   che
   nnanze
@@ -370,6 +402,7 @@ Prediction: sta, che nnanze l’ ora de dare tributo a lo
 Processing line 28...
 Reference: tiempo, s'apparecchiano scazzimme all'uoc-
 Prediction: tiempo, s’apparecchiano scazzimme all’ uoc-
+
   tiempo,
 - s'apparecchiano
 ?  ^
@@ -385,6 +418,7 @@ Prediction: tiempo, s’apparecchiano scazzimme all’ uoc-
 Processing line 29...
 Reference: chie, crespe a la facce, e defiette a le mmole;
 Prediction: chie, crespe a la facce, e defiette a le mmole;
+
   chie,
   crespe
   a
@@ -399,6 +433,7 @@ Prediction: chie, crespe a la facce, e defiette a le mmole;
 Processing line 30...
 Reference: ma se mmereta biasemo na giovanella, che trop-
 Prediction: ma se mmereta biasemo na giovanella, che trop-
+
   ma
   se
   mmereta
@@ -411,6 +446,7 @@ Prediction: ma se mmereta biasemo na giovanella, che trop-
 Processing line 31...
 Reference: po vana se dace a sse bacantarie, quanto è
 Prediction: po vana se dace a fse bacantarie, quanto è
+
   po
   vana
   se
@@ -425,6 +461,7 @@ Prediction: po vana se dace a fse bacantarie, quanto è
 Processing line 32...
 Reference: cchiù ddegna de castigo na vecchia, che bolen-
 Prediction: chiù ddegnia de castigo na vecchia, che bolen-
+
 - cchiù
 ? -
 
@@ -443,6 +480,7 @@ Prediction: chiù ddegnia de castigo na vecchia, che bolen-
 Processing line 33...
 Reference: no comparere co le ffigliole, se causa l'allucca
 Prediction: no comparere co le figliiole, se causa l’alluca
+
   no
   comparere
   co
@@ -465,6 +503,7 @@ Prediction: no comparere co le figliiole, se causa l’alluca
 Processing line 34...
 Reference: de la gente, e la ruina de se stessa; comme
 Prediction: de la gente, e la ruina de se stessa; comme
+
   de
   la
   gente,
@@ -479,6 +518,7 @@ Prediction: de la gente, e la ruina de se stessa; comme
 Processing line 35...
 Reference: so pe contareve, se mme darrite no tantillo
 Prediction: fo pe contrareve, se mme darrite no tantillo
+
 - so
 + fo
   pe
@@ -495,6 +535,7 @@ Prediction: fo pe contrareve, se mme darrite no tantillo
 Processing line 36...
 Reference: d'aurecchie.
 Prediction: d’aurecchie.
+
 - d'aurecchie.
 ?  ^
 
@@ -505,6 +546,7 @@ Prediction: d’aurecchie.
 Processing line 37...
 Reference: S'erano raccovete dinto a no giardino, dove
 Prediction: S’erano raccovete dinto a no giardino, dove
+
 - S'erano
 ?  ^
 
@@ -521,6 +563,7 @@ Prediction: S’erano raccovete dinto a no giardino, dove
 Processing line 38...
 Reference: aveva l'affacciata lo Rrè de Rocca forte, doje
 Prediction: aveva l’affacciata lo Rré de Rocca-forte, doje
+
   aveva
 - l'affacciata
 ?  ^
@@ -540,6 +583,7 @@ Prediction: aveva l’affacciata lo Rré de Rocca-forte, doje
 Processing line 39...
 Reference: vecchiarelle; ch'erano lo reassunto de le dde-
 Prediction: vecchiarelle; ch’erano lo reafsunto de le dde-
+
   vecchiarelle;
 - ch'erano
 ?   ^
@@ -561,6 +605,7 @@ Prediction: vecchiarelle; ch’erano lo reafsunto de le dde-
 Processing line 40...
 Reference: sgrazie, lo protacuollo de li sturce, lo libro
 Prediction: grazìe, lo protacuollo de li sfurce, lo libro
+
 - sgrazie,
 ? -    ^
 
@@ -583,6 +628,7 @@ Prediction: grazìe, lo protacuollo de li sfurce, lo libro
 Processing line 41...
 Reference: maggiore de la bruttezza, le cquale avevano le
 Prediction: maggiore de la bruttezza, le quale avevano le
+
   maggiore
   de
   la
@@ -598,6 +644,7 @@ Prediction: maggiore de la bruttezza, le quale avevano le
 Processing line 42...
 Reference: zervole scigliate, e 'ngrifate, lo fronte 'ncrespa-
 Prediction: zervole fscigliate, e ’ngrifate, lo fronte ’ncrefpa-
+
   zervole
 - scigliate,
 + fscigliate,
@@ -622,6 +669,7 @@ Prediction: zervole fscigliate, e ’ngrifate, lo fronte ’ncrefpa-
 Processing line 43...
 Reference: to, e brognoluso, le cciglia storcigliate, e rre-
 Prediction: to, e brognolufo, le ciglia ftorcigliate, e rre-
+
   to,
   e
 - brognoluso,
@@ -647,6 +695,7 @@ Prediction: to, e brognolufo, le ciglia ftorcigliate, e rre-
 Processing line 44...
 Reference: stolose, le pparpetole chiantute, ed a ppenne-
 Prediction: ftolofe, le pparpetoIe chiantute, ed a ppenne-
+
 - stolose,
 ? ^    ^
 
@@ -668,6 +717,7 @@ Prediction: ftolofe, le pparpetoIe chiantute, ed a ppenne-
 Processing line 45...
 Reference: ricolo, l'uocchie vizze, e scarcagnate, la facce
 Prediction: ricolo, l’uocchie vizze, e fcarcagnate, la facce
+
   ricolo,
 - l'uocchie
 ?  ^
@@ -689,6 +739,7 @@ Prediction: ricolo, l’uocchie vizze, e fcarcagnate, la facce
 Processing line 46...
 Reference: gialloteca, ed arrappata, la vocca squacquara-
 Prediction: gialloteca, ed arrappata, la vocca sfaqquara-
+
   gialloteca,
   ed
   arrappata,
@@ -704,6 +755,7 @@ Prediction: gialloteca, ed arrappata, la vocca sfaqquara-
 Processing line 47...
 Reference: ta, e storta, e 'nfomma la varva d'annecchia,
 Prediction: ta, e florta, e ’nfomma la varva d’annecchia,
+
   ta,
   e
 - storta,
@@ -727,6 +779,7 @@ Prediction: ta, e florta, e ’nfomma la varva d’annecchia,
 Processing line 48...
 Reference: lo pietto peluso, le spalle co la contrapanzetta
 Prediction: lo pietto pelufo, le fpalle co la contrapanzetta,
+
   lo
   pietto
 - peluso,
@@ -752,6 +805,7 @@ Prediction: lo pietto pelufo, le fpalle co la contrapanzetta,
 Processing line 49...
 Reference: le braccia arronchiate, le gamme sciancate, e
 Prediction: le braccia arronchiate, le gamme fciancate, e
+
   le
   braccia
   arronchiate,
@@ -768,6 +822,7 @@ Prediction: le braccia arronchiate, le gamme fciancate, e
 Processing line 50...
 Reference: scioffate, e li piede a ccrocco: pe la quale co-
 Prediction: fcioffate, e li piede a crocco: pe la quale co-
+
 - scioffate,
 ? ^
 
@@ -790,6 +845,7 @@ Prediction: fcioffate, e li piede a crocco: pe la quale co-
 Processing line 51...
 Reference: sa azzò no le bedesse manco lo Sole, co cchel-
 Prediction: fa azzò no Ie bedefse manco lo Sole, co cchel-
+
 - sa
 + fa
   azzò
@@ -811,6 +867,7 @@ Prediction: fa azzò no Ie bedefse manco lo Sole, co cchel-
 Processing line 52...
 Reference: la brutta caira, se ne stevano 'ncaforchiate din-
 Prediction: la brutta caira, fe ne ftevano ’ncafofnirate din-
+
   la
   brutta
   caira,
@@ -830,6 +887,7 @@ Prediction: la brutta caira, fe ne ftevano ’ncafofnirate din-
 Processing line 53...
 Reference: to no vascio sotto le ffenestre de chillo Signo-
 Prediction: to no vafto fotto le ffenefstre de chillo Signo-
+
   to
   no
 - vascio
@@ -852,6 +910,7 @@ Prediction: to no vafto fotto le ffenefstre de chillo Signo-
 Processing line 54...
 Reference: re, lo quale era arreddutto a ttermene, che
 Prediction: re, lo quale era arredutto a ttermene, che
+
   re,
   lo
   quale
@@ -867,6 +926,7 @@ Prediction: re, lo quale era arredutto a ttermene, che
 Processing line 55...
 Reference: non poteva fare no pideto senza dare a lo na-
 Prediction: non poteva fare no pideto senza dare a lo na-
+
   non
   poteva
   fare
@@ -881,6 +941,7 @@ Prediction: non poteva fare no pideto senza dare a lo na-
 Processing line 56...
 Reference: so de ste brutte gliannole, che d'ogne poco
 Prediction: so de fte brutte giannole, che d’ogne poco
+
   so
   de
 - ste
@@ -902,6 +963,7 @@ Prediction: so de fte brutte giannole, che d’ogne poco
 Processing line 57...
 Reference: cosa 'mbroselejavano, e sse pigliavano lo tota-
 Prediction: cofa ’mbrofelejavano, e fse pigliavano lo tota-
+
 - cosa
 ?   ^
 
@@ -924,6 +986,7 @@ Prediction: cofa ’mbrofelejavano, e fse pigliavano lo tota-
 Processing line 58...
 Reference: no; mò decenno ca no giesommino cascato da
 Prediction: no; mò decenno ca no gieformino cafcato da
+
   no;
   mò
   decenno
@@ -946,6 +1009,7 @@ Prediction: no; mò decenno ca no gieformino cafcato da
 Processing line 59...
 Reference: coppa, l'aveva 'mbrognolato lo caruso, mò ca
 Prediction: coppa, l’aveva ’mbrognolato lo carufo, mò ca
+
   coppa,
 - l'aveva
 ?  ^
@@ -972,6 +1036,7 @@ Prediction: coppa, l’aveva ’mbrognolato lo carufo, mò ca
 Processing line 60...
 Reference: na lettera stracciata l'aveva 'ntontolato na spal-
 Prediction: na Iettera ffracciata l’aveva ’ntontolato na fpal-
+
   na
 - lettera
 ? ^
@@ -1008,6 +1073,7 @@ Prediction: na Iettera ffracciata l’aveva ’ntontolato na fpal-
 Processing line 61...
 Reference: la, mò ca no poco de porvere l'aveva amma-
 Prediction: la, mò ca no poco de porvere l’aveva amma-
+
   la,
   mò
   ca
@@ -1026,6 +1092,7 @@ Prediction: la, mò ca no poco de porvere l’aveva amma-
 Processing line 62...
 Reference: tontato na coscia, tanto che ssentenno sto scas-
 Prediction: ttontato na cofcía, tanto che ffentennò fto fca-
+
 - tontato
 + ttontato
 ? +
@@ -1045,6 +1112,7 @@ Prediction: ttontato na cofcía, tanto che ffentennò fto fca-
 Processing line 63...
 Reference: sone de dellecatezza lo Rrè, facette argomien-
 Prediction: fone de dellecatezza lo Rré, facette argomien-
+
 - sone
 ? ^
 
@@ -1066,6 +1134,7 @@ Prediction: fone de dellecatezza lo Rré, facette argomien-
 Processing line 64...
 Reference: to, che ssotto ad isso fosse la quintassenzia de
 Prediction: to, che fotto ad isso fofse la quintafsenza de
+
   to,
   che
 - ssotto
@@ -1090,6 +1159,7 @@ Prediction: to, che fotto ad isso fofse la quintafsenza de
 Processing line 65...
 Reference: le ccose cenere, lo primmo taglio de le cca-
 Prediction: Ie ccofe cenere, lo primmo taglio de Ie cca-
+
 - le
 + Ie
 - ccose
@@ -1110,6 +1180,7 @@ Prediction: Ie ccofe cenere, lo primmo taglio de Ie cca-
 Processing line 66...
 Reference: mumme mollise, e l'accoppatura de le ttenne-
 Prediction: mumme mollife, e l’accoppatura de le ttenne-
+
   mumme
 - mollise,
 ?      ^
@@ -1131,6 +1202,7 @@ Prediction: mumme mollife, e l’accoppatura de le ttenne-
 Processing line 67...
 Reference: rumme, pe la quale mente cosa le venne go-
 Prediction: mumme, pe la quale mente cofa le venne go-
+
 - rumme,
 ? ^
 
@@ -1154,6 +1226,7 @@ Prediction: mumme, pe la quale mente cofa le venne go-
 Processing line 68...
 Reference: lio da l'ossa pezzelle, e boglia da le ccata-
 Prediction: lio da l’ofsa pezzelle, e boglia da le ccata-
+
   lio
   da
 - l'ossa
@@ -1168,6 +1241,7 @@ Prediction: lio da l’ofsa pezzelle, e boglia da le ccata-
 Processing line 69...
 Reference: melle de l'ossa de vedere sto spanto, e cchiarire-
 Prediction: melle de l’ofsa de vedere fto fpanto, e chiiarire-
+
   melle
   de
 - l'ossa
@@ -1193,6 +1267,7 @@ Prediction: melle de l’ofsa de vedere fto fpanto, e chiiarire-
 Processing line 70...
 Reference: se de sto fatto, e accommenzaje a ghiettare so-
 Prediction: fe de fto fatto, e accommenzaje a ghiettare fo-
+
 - se
 + fe
   de
@@ -1209,6 +1284,7 @@ Prediction: fe de fto fatto, e accommenzaje a ghiettare fo-
 Processing line 71...
 Reference: spire da coppa, e bascio, a rrascare senza ca-
 Prediction: spire da coppa, e bafcio, a rrafcare senza ca-
+
   spire
   da
   coppa,
@@ -1232,6 +1308,7 @@ Prediction: spire da coppa, e bafcio, a rrafcare senza ca-
 Processing line 72...
 Reference: tarro, e finalemente a pparlare cchiù speduto,
 Prediction: tarro, e finalmente a pparlare cchiù fpeduto,
+
   tarro,
   e
 - finalemente
@@ -1251,6 +1328,7 @@ Prediction: tarro, e finalmente a pparlare cchiù fpeduto,
 Processing line 73...
 Reference: e ffora de li diente, decenno: Dove, dove te
 Prediction: e ffiora de li diente, decenno: Dove, dove te
+
   e
 - ffora
 + ffiora
@@ -1267,6 +1345,7 @@ Prediction: e ffiora de li diente, decenno: Dove, dove te
 Processing line 74...
 Reference: nascunne, giojello, sfuorgio, isce bello de lo
 Prediction: nafscunne, giojello, sfuorgio, ifce bello de lo
+
 - nascunne,
 + nafscunne,
 ?   +
@@ -1286,6 +1365,7 @@ Prediction: nafscunne, giojello, sfuorgio, ifce bello de lo
 Processing line 75...
 Reference: munno? jesce jesce sole, scaglienta 'mparatore:
 Prediction: mmunno? jefce jefce fole, fcaglíenta ’mparatore:
+
 - munno?
 + mmunno?
 ? +
@@ -1324,6 +1404,7 @@ Prediction: mmunno? jefce jefce fole, fcaglíenta ’mparatore:
 Processing line 76...
 Reference: scuopre sse belle grazie, mostra sse llocernelle
 Prediction: fscuopre fte belle grazie, moftra fte filocernelle
+
 - scuopre
 + fscuopre
 ? +
@@ -1350,6 +1431,7 @@ Prediction: fscuopre fte belle grazie, moftra fte filocernelle
 Processing line 77...
 Reference: de l'addorosa poteca d'ammore? caccia sta ca-
 Prediction: de l’addorofa poteca d’ammore? caccia fta ca-
+
   de
 - l'addorosa
 ?  ^      ^
@@ -1372,6 +1454,7 @@ Prediction: de l’addorofa poteca d’ammore? caccia fta ca-
 Processing line 78...
 Reference: tarozzola banco accorzato de li contante de le
 Prediction: tarozzola banco accorzato de li contante de le
+
   tarozzola
   banco
   accorzato
@@ -1384,6 +1467,7 @@ Prediction: tarozzola banco accorzato de li contante de le
 Processing line 79...
 Reference: bellezze: non essere accossì scarzogna de la vi-
 Prediction: bellezze: non effere accofsi fcarzogna de la vi-
+
   bellezze:
   non
 - essere
@@ -1403,6 +1487,7 @@ Prediction: bellezze: non effere accofsi fcarzogna de la vi-
 Processing line 80...
 Reference: sta toja; apre le pporte a ppovero farcone,
 Prediction: fta toja; apre le pporte a ppovero farcone,
+
 - sta
 + fta
   toja;
@@ -1416,6 +1501,7 @@ Prediction: fta toja; apre le pporte a ppovero farcone,
 Processing line 81...
 Reference: famme la 'nferta si mme la vuoje fare? lassem-
 Prediction: famme la ’nferta sì mme la vuoje fare? Iaffem-
+
   famme
   la
 - 'nferta
@@ -1436,6 +1522,7 @@ Prediction: famme la ’nferta sì mme la vuoje fare? Iaffem-
 Processing line 82...
 Reference: me vedere lo stromiento da dove esce ssa bella
 Prediction: me vedere lo fftrumento da dove efce fsa bella
+
   me
   vedere
   lo
@@ -1456,6 +1543,7 @@ Prediction: me vedere lo fftrumento da dove efce fsa bella
 Processing line 83...
 Reference: voce: fa che bea la campana, da la quale se
 Prediction: voce: fa che bea la campana, da la quale fe
+
   voce:
   fa
   che
@@ -1471,6 +1559,7 @@ Prediction: voce: fa che bea la campana, da la quale fe
 Processing line 84...
 Reference: forma lo 'ntinno, famme pigliare na vista de
 Prediction: forma lo ’ntinno, famme pigliare na vifta de
+
   forma
   lo
 - 'ntinno,
@@ -1493,6 +1582,7 @@ Prediction: forma lo ’ntinno, famme pigliare na vifta de
 Processing line 85...
 Reference: ss'auciello, non consentire, che ppecora de
 Prediction: fs’auciello; non consentire, che ppecora de
+
 - ss'auciello,
 ?  ^^        ^
 
@@ -1508,6 +1598,7 @@ Prediction: fs’auciello; non consentire, che ppecora de
 Processing line 86...
 Reference: Ponto mme pasca de nascienzo, co nnegareme
 Prediction: Ponto mme pafca de nafscienzo, co ’nnegareme
+
   Ponto
   mme
 - pasca
@@ -1530,6 +1621,7 @@ Prediction: Ponto mme pafca de nafscienzo, co ’nnegareme
 Processing line 87...
 Reference: lo mmirare, e ccontemprare sta bellezzetudene
 Prediction: lo mmirare, e contemplare fta bellezetudene
+
   lo
   mmirare,
   e
@@ -1549,6 +1641,7 @@ Prediction: lo mmirare, e contemplare fta bellezetudene
 Processing line 88...
 Reference: cosa; cheste, ed autre pparole deceva lo Rrè;
 Prediction: cofa; chefte, ed altre pparole deceva lo Rré;
+
 - cosa;
 ?   ^
 
@@ -1581,6 +1674,7 @@ Prediction: cofa; chefte, ed altre pparole deceva lo Rré;
 Processing line 89...
 Reference: ma poteva sonare a grolia, ca le becchie ave-
 Prediction: ma poteva fonare a grolia, ca le becchie ave-
+
   ma
   poteva
 - sonare
@@ -1599,6 +1693,7 @@ Prediction: ma poteva fonare a grolia, ca le becchie ave-
 Processing line 90...
 Reference: vano 'ntompagnate l'aorecchie, la quale cosa
 Prediction: vano ’ntompagnate l’aorecchie, la quale cofa
+
   vano
 - 'ntompagnate
 ? ^
@@ -1624,6 +1719,7 @@ Prediction: vano ’ntompagnate l’aorecchie, la quale cofa
 Processing line 91...
 Reference: refonneva legne a lo ffuoco. E lo Rrè, che se
 Prediction: refonneva legne a lo ffiuoco. E lo Rré, che fe
+
   refonneva
   legne
   a
@@ -1647,6 +1743,7 @@ Prediction: refonneva legne a lo ffiuoco. E lo Rré, che fe
 Processing line 92...
 Reference: senteva comm'a ffierro scaudare a la fornace de
 Prediction: fenteva comm’a fierro fscaudare a la fornace de
+
 - senteva
 ? ^
 
@@ -1675,6 +1772,7 @@ Prediction: fenteva comm’a fierro fscaudare a la fornace de
 Processing line 93...
 Reference: lo desederio, tenere da le ttenaglie de lo pen-
 Prediction: lo defiderio, tenere da le ttenaglie de lo pen-
+
   lo
 - desederio,
 ?   ^^
@@ -1693,6 +1791,7 @@ Prediction: lo defiderio, tenere da le ttenaglie de lo pen-
 Processing line 94...
 Reference: ziero, e mmartellare da lo maglio de lo tor-
 Prediction: ziero, e mmartellare da lo maglio de lo tor-
+
   ziero,
   e
   mmartellare
@@ -1706,6 +1805,7 @@ Prediction: ziero, e mmartellare da lo maglio de lo tor-
 Processing line 95...
 Reference: miento amoruso, pe fare na chiave, che potes-
 Prediction: miento amorufo, pe fare na chiave, che potef-
+
   miento
 - amoruso,
 ?      ^
@@ -1728,6 +1828,7 @@ Prediction: miento amorufo, pe fare na chiave, che potef-
 Processing line 96...
 Reference: se aprire la cascetella de le gioje, che lo face-
 Prediction: fe aprire la ccfecetella de le gioje, che lo face-
+
 - se
 + fe
   aprire
@@ -1748,6 +1849,7 @@ Prediction: fe aprire la ccfecetella de le gioje, che lo face-
 Processing line 97...
 Reference: vano morire speruto; ma non pe cchesto se
 Prediction: vano morire fpeduto; ma non pe cchefto fe
+
   vano
   morire
 - speruto;
@@ -1771,6 +1873,7 @@ Prediction: vano morire fpeduto; ma non pe cchefto fe
 Processing line 98...
 Reference: dette arreto, ma secotaje a mmannare suppre-
 Prediction: dette arreto, ma fcootaje a mmanare fuppre-
+
   dette
   arreto,
   ma
@@ -1795,6 +1898,7 @@ Prediction: dette arreto, ma fcootaje a mmanare fuppre-
 Processing line 99...
 Reference: che, e a rrenforzare assunte, senza pigliare ma-
 Prediction: che, e a rrenforzare afsunze, senza pigliare ma-
+
   che,
   e
   a
