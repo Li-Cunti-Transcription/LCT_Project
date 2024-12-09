@@ -446,10 +446,9 @@
   </thead>
   <tbody>
       <tr>
-        <tr class="tr">
-          <th scope="row">Punctuation</th>
-          <td><img src="assets/img/punctuationex.png" class="table-img" alt="Puntuation example" title="Click to zoom in!"></td>
-          <td class="table-txt">The transcription followed the original text for what concerns traditional puntuation such as comma, colon, full stop, semicolon, question mark, exclamation mark, single and double quotation marks and apostrophe.</td>
+        <th scope="row">Punctuation</th>
+        <td><img src="assets/img/punctuationex.png" class="table-img" alt="Punctuation example" title="Click to zoom in!" onclick="zoomImage(this)"></td>
+        <td class="table-txt">The transcription followed the original text for what concerns traditional punctuation such as comma, colon, full stop, semicolon, question mark, exclamation mark, single and double quotation marks and apostrophe.</td>
       </tr>
       <tr>
           <th scope="row">Uppercase and lowercase letters</th>
@@ -472,6 +471,13 @@
       </tr>
   </tbody>
 </table>
+<div id="zoom-modal" class="zoom-modal" onclick="closeZoom()">
+  <img id="zoomed-img" class="zoomed-img" src="" alt="Zoomed image">
+</div>
+
+<p class="text-minor"><span class="material-symbols-outlined icon-align" id="zoom_in">zoom_in</span>Click on the pictures to zoom in!</p>
+
+
 <br>
 <br>
 <!-- Section -->
