@@ -1639,20 +1639,65 @@ section,
 }
 
 
-/* table.diff {font-family:Courier; border:medium;}
-        .diff_header {background-color:#e0e0e0}
-        td.diff_header {text-align:right} */
-        .diff_next {background-color:#c0c0c0}
-        .diff_add {background-color:#aaffaa}
-        .diff_chg {background-color:#ffff77}
-        .diff_sub {background-color:#ffaaaa}
-
-#evaluation .accordion-body {
-  height: 20em;
-  overflow-y: scroll;
+/* CSS per la tabella */
+.table-img{
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  cursor: pointer
 }
 
-.accordion-body table {
-  margin-left: 5.5em;
-  margin-top: 2em;
+.table-img:hover {
+  opacity: 0.8;
 }
+
+/* Stile per la modale */
+.modal {
+  display: none; /* Nascondi la modale di default */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Sfondo trasparente */
+  overflow: auto;
+  padding-top: 250px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Modale - Contenuto immagine */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  justify-items: center;
+}
+
+/* Descrizione della modale */
+.modal-description {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+/* Bottone per chiudere la modale */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #777474;
+  text-decoration: none;
+  cursor: pointer;
+}
+

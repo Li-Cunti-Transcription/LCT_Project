@@ -227,3 +227,41 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// Funzione per aprire la modale e caricare l'immagine e la descrizione
+function zoomImage(imageSrc, description) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  var modalDesc = document.getElementById("modalDescription");
+
+  // Imposta l'immagine e la descrizione
+  modalImg.src = imageSrc;
+  modalDesc.innerHTML = description;
+
+  // Mostra la modale
+  modal.style.display = "block";
+}
+
+// Funzione per chiudere la modale
+function closeModal() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
+
+function zoomImage(imageSrc, description) {
+  console.log("Immagine da visualizzare:", imageSrc);
+  console.log("Descrizione dell'immagine:", description);
+  
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  var modalDesc = document.getElementById("modalDescription");
+
+  // Imposta l'immagine da visualizzare nella modale
+  modalImg.src = imageSrc;
+  modalDesc.innerHTML = description;
+
+  // Mostra la modale
+  modal.style.display = "block";
+}
+
+
