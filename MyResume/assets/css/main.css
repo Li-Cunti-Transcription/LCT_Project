@@ -1655,15 +1655,15 @@ section,
 .modal {
   display: none; /* Nascondi la modale di default */
   position: fixed;
-  z-index: 1; /* Sta sopra al contenuto */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Sfondo trasparente */
   overflow: auto;
-  padding-top: 60px;
+  padding-top: 250px;
   justify-items: center;
+  align-items: center;
 }
 
 /* Modale - Contenuto immagine */
@@ -1696,7 +1696,7 @@ section,
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #777474;
   text-decoration: none;
   cursor: pointer;
 }

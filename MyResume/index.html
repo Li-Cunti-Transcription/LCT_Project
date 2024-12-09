@@ -447,26 +447,26 @@
   <tbody>
       <tr>
         <th scope="row">Punctuation</th>
-        <td><img src="assets/img/punctuationex.png" class="table-img" alt="Punctuation example" title="Click to zoom in!" onclick="zoomImage('assets/img/punctuationex.png', 'This is an example of punctuation in the first page of the <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
+        <td><img src="assets/img/punctuationex.png" class="table-img" alt="Punctuation example" title="Click to zoom in!" onclick="zoomImage('assets/img/punctuationex.png', 'This is an example of punctuation in page 13 of <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
         <td class="table-txt">The transcription followed the original text for what concerns traditional punctuation such as comma, colon, full stop, semicolon, question mark, exclamation mark, single and double quotation marks and apostrophe.</td>
       </tr>
       <tr>
           <th scope="row">Uppercase and lowercase letters</th>
-          <td><img src="assets/img/upperlowerletex.png" class="table-img" alt="Uppercase and lowercase letters example"></td>
+          <td><img src="assets/img/upperlowerletex.png" class="table-img" alt="Uppercase and lowercase letters example" title="Click to zoom in!" onclick="zoomImage('assets/img/upperlowerletex.png', 'This is an example of uppercase and lowercase letters in page 13 of <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
           <td class="table-txt">The transcription followed the original text for what concerns uppercase and lowercase letters. In those cases in which the sentence began with a drop cap followed by another uppercase letter we have decided to stick to the original text and to transcribe both the letters in uppercase.</td>
       </tr>
       <tr>
           <th scope="row">Italic text</th>
-          <td><img src="assets/img/italicex.png" class="table-img" alt="Italic text example"></td>
+          <td><img src="assets/img/italicex.png" class="table-img" alt="Italic text example" onclick="zoomImage('assets/img/italicex.png', 'This is an example of italic text in page 75 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
           <td class="table-txt">The transcription followed the original text for what concerns italic texts. They are represented through the dedicated "<i>I</i>" Italic tag of Transkribus.</td>
       </tr>
       <tr>
           <th scope="row">Diacritical characters</th>
-          <td><img src="assets/img/diacriticalcharactersex.png" class="table-img" alt="Diacritical characters example"></td>
+          <td><img src="assets/img/diacriticalcharactersex.png" class="table-img" alt="Diacritical characters example" onclick="zoomImage('assets/img/diacriticalcharactersex.png', 'This is an example of diacritical charactersin page 16 of <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
           <td class="table-txt">All the accents have been transcribed according to the original text (such as "farrà", "perchè" and "accossì").</td>
       <tr>
           <th scope="row">Hyphenated words</th>
-          <td><img src="assets/img/hyphenatedex.png" class="table-img" alt="Hyphenated words example"></td>
+          <td><img src="assets/img/hyphenatedex.png" class="table-img" alt="Hyphenated words example" onclick="zoomImage('assets/img/hyphenatedex.png', 'This is an example of hyphenated words in page 81 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
           <td class="table-txt">Hyphenated words that appear at the end of the line have been transcribed by breaking them up according to the original text. This means that they were graphically represented by adding a “-” at the end of the line only if present.</td>
       </tr>
   </tbody>
@@ -496,26 +496,34 @@
     <tbody>
         <tr>
             <th scope="row">Page numbers</th>
-            <td><img src="assets/img/numbersex.png" class="table-img" alt="Numbers of pages example" title="Click to zoom in!"></td>
+            <td><img src="assets/img/numbersex.png" class="table-img" alt="Numbers of pages example" title="Click to zoom in!" onclick="zoomImage('assets/img/numbersex.png', 'This is an example of page number in page 59 of <i>Vardiello</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
             <td class="table-txt">Page numbers, positioned at the bottom, have been ignored.
             </td>
         </tr>
         <tr>
             <th scope="row">Headers</th>
-            <td><img src="assets/img/headerex.png" class="table-img" alt="Headers example"></td>
+            <td><img src="assets/img/headerex.png" class="table-img" alt="Headers example" onclick="zoomImage('assets/img/headerex.png', 'This is an example of headers in page 77 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
             <td class="table-txt">Headers, that repat the main title of the tale and appear on the top of each page, have not been considered.</td>
         </tr>
         <tr>
             <th scope="row">Catch-words</th>
-            <td><img src="assets/img/catch_wordex.png" class="table-img" alt="Catch-words example"></td>
+            <td><img src="assets/img/catch_wordex.png" class="table-img" alt="Catch-words example" onclick="zoomImage('assets/img/catch_wordex.png', 'This is an example of catch words in page 76 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
             <td class="table-txt">Catch-words, which are placed at the end of the text and consist of one syllable or one word that anticipate the first word of the following page, have been discarded.</td>
         <tr>
             <th scope="row">Signature marks</th>
-            <td><img src="assets/img/signaturemarksex.png" class="table-img" alt="Signature marks example"></td>
+            <td><img src="assets/img/signaturemarksex.png" class="table-img" alt="Signature marks example" onclick="zoomImage('assets/img/signaturemarksex.png', 'This is an example of signature marks in page 75 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
             <td class="table-txt">Signature marks, which are located below the print space and state the sheet or the position in the entire work have not been taken into consideration.</td>
         </tr>
     </tbody>
 </table>
+
+<!-- Modale -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="modal-content" alt="" >
+  <div id="modalDescription" class="modal-description"></div>
+</div>
+
 <br>
 <br>
 <!-- Section -->
@@ -535,20 +543,27 @@
       <tbody>
           <tr>
               <th scope="row">S-characters/graphemes </th>
-              <td><img src="assets/img/scharacterex.png" class="table-img" alt="S-characters/graphemes example"></td>
+              <td><img src="assets/img/scharacterex.png" class="table-img" alt="S-characters/graphemes example" onclick="zoomImage('assets/img/scharacterex.png', 'This is an example of S-character in page 58 of <i>Vardiello</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
               <td class="table-txt">S-characters/graphemes were transcribed as round-s. The letter “s” can appear in different forms, such as normal and long “s” (with descender, as can be seen in "stisso" in the text), which have been transcribed as normal round-s.</td>
           </tr>
           <tr>
               <th scope="row">Unclear</th>
-              <td><img src="assets/img/unclearex.png" class="table-img" alt="Unclear example"></td>
+              <td><img src="assets/img/unclearex.png" class="table-img" alt="Unclear example" onclick="zoomImage('assets/img/unclearex.png', 'This is an example of unclear letter in page 9 of <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
               <td class="table-txt">Unclear letters, words and passages have been highlighted with the dedicated “unclear” tag provided by Transkribus.</td>
           <tr>
               <th scope="row">Gap</th>
-              <td><img src="assets/img/thegapex.png" class="table-img" alt="Gap example"></td>
+              <td><img src="assets/img/thegapex.png" class="table-img" alt="Gap example" onclick="zoomImage('assets/img/thegapex.png', 'This is an example of a gap in page 18 of <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
               <td class="table-txt">Missing letters and words that left empty spaces have been marked with the dedicated “gap” tag provided by Transkribus.</td>
           </tr>
         </tbody>
       </table>
+
+<!-- Modale -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="modal-content" alt="" >
+  <div id="modalDescription" class="modal-description"></div>
+</div>
 <br>
 <br>
 
