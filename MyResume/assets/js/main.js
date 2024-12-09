@@ -228,16 +228,5 @@
 
 })();
 
-// Funzione per zoomare l'immagine
-function zoomImage(img) {
-  var modal = document.getElementById("zoom-modal");
-  var zoomedImg = document.getElementById("zoomed-img");
-  zoomedImg.src = img.src; // Imposta l'immagine zoomata alla stessa immagine che è stata cliccata
-  modal.style.display = "flex"; // Mostra la finestra modale
-}
 
-// Funzione per chiudere la finestra di zoom
-function closeZoom() {
-  var modal = document.getElementById("zoom-modal");
-  modal.style.display = "none"; // Nasconde la finestra modale
-}
+
