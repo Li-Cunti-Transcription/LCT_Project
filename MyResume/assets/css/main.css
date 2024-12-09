@@ -1637,3 +1637,9 @@ section,
   height: 10px;
   width: auto;
 }
+
+.table-img{
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+}
