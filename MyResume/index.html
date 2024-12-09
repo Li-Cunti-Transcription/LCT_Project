@@ -447,7 +447,7 @@
   <tbody>
       <tr>
         <th scope="row">Punctuation</th>
-        <td><img src="assets/img/punctuationex.png" class="table-img" alt="Punctuation example" title="Click to zoom in!" onclick="zoomImage(this)"></td>
+        <td><img src="assets/img/punctuationex.png" class="table-img" alt="Punctuation example" title="Click to zoom in!" onclick="zoomImage('assets/img/punctuationex.png', 'This is an example of punctuation in the first page of the <i>Introduction</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
         <td class="table-txt">The transcription followed the original text for what concerns traditional punctuation such as comma, colon, full stop, semicolon, question mark, exclamation mark, single and double quotation marks and apostrophe.</td>
       </tr>
       <tr>
@@ -471,6 +471,12 @@
       </tr>
   </tbody>
 </table>
+<!-- Modale -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="modal-content" alt="" >
+  <div id="modalDescription" class="modal-description"></div>
+</div>
 
 <br>
 <br>
