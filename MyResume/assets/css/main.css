@@ -551,6 +551,7 @@ section,
 }
 #evaluation ul figcaption {
   width: 70%;
+  word-wrap: wrap;
 }
 #evaluation figure {
   padding: 1.5em 0;
