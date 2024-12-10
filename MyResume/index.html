@@ -712,7 +712,7 @@
               </tr>
             </table>
             <p>As a complementary tool that could provide us with an overall view of the typologies of errors and the main difficulties faced in the text recognition process, we used Python <code>difflib</code> library for producing an aligned comparison of the reference and prediction texts.</p>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush" id="accordionFlushExample" class="section-subtitle">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: rgba(58, 96, 103, 0.2); border-radius:5px;">
@@ -834,6 +834,7 @@
               </div>
               </div>
             </div>
+            <div class="section-subtitle">
             <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the quality of the printed material, where often ink stains and other damages made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable. <!--space between apostrophe and following word--> <br>However, some errors could be easily addressed by refining prompts. In particular, we immediately realized that, in the transcription provided by ChatGPT, all severe-stressed "e" characters were transcribed as acute-stressed, and that the apostrophe was not consistently transcribed, but frequently replaced with a right single quotation character. ChatGPT was able to correct almost all the occurrences of the described phenomena. The WER and CER metrics applied on the transcriptions obtained after refining the prompts show the following results:</p>
             <table class="table metrics-table">
               <tr>
