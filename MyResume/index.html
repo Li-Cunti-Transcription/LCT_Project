@@ -87,7 +87,7 @@
           <img src="assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
         <p>This project aims to provide a comparison between the performance of Trankribus and ChatGPT on the transcription of printed text. In particular, we have chosen to conduct an analysis on the text <b>"Lo Cunto de li Cunte"</b> by Giambattista Basile, a Neapolitan author of the 17th century, using the edition of 1788 by Porcelli.<br>
-          We decided to focus on this specific topic for our project due to a personal interest in this author, who is not very well-known in the Italian literary scene. In fact, given that we all have a background in the humanities, we had often come across his name during our studies but never had the opportunity to explore it in depth. Additionally, we thought it would be interesting to conduct an analysis of his texts to engage with a different literary language, as the writing in “Lo cunto de li cunte” is entirely based on the <b>Neapolitan dialect</b>, so the transcription of his text was positively challenging for us.<br>
+          We decided to focus on this specific topic for our project due to a personal interest in this author. Given that we all have a background in the humanities, we had often come across his name during our studies but never had the opportunity to explore it in depth. Additionally, we thought it would be interesting to conduct an analysis of his texts to engage with a different literary language, as the writing in “Lo cunto de li cunte” is entirely based on the <b>Neapolitan dialect</b>, so the transcription of his text was positively challenging for us.<br>
           We also found it very stimulating to observe the origins of many stories that are still deeply ingrained in today's collective imagination. Rediscovering their roots — sometimes rather dark ones — we noted that, despite the centuries that have passed, these works remain highly relevant and continue to have a strong following.
           </p>
       </div><!-- End Section Title -->
@@ -105,7 +105,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/Giambattista_Basile.png" class="writers" alt=""  style="width: 100%; height: auto; object-fit: cover;">
+            <figure><img src="assets/img/Giambattista_Basile.png" class="writers" alt=""  style="width: 100%; height: auto; object-fit: cover;"><figcaption><i>Fig. 1</i> A portrait of Basile</figcaption></figure>
           </div>
           <div class="col-lg-8 content">
             <p>
@@ -145,7 +145,7 @@
           <p>Once we selected “Lo Cunto de li Cunte” as the main work for our transcription project, the next step was to identify the edition and the portions of text to transcribe in order to begin the creation of our model. <br>
             We chose to base our training corpus on one of the first editions available, in particular we selected Porcelli’s 1788, which is readily available on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0">Europeana</a>. <br>
             We would also like to emphasize that all the titles of the texts and the proper names mentioned, refer to the edition we used, whereas later editions of the work feature different versions.<br>
-            Rather than working with the entire text, we focused on the <i>Introduction</i> (titled <i>Ntroduzzeione</i>), and two collection’s tales: <i>”La Gatta Cenerentola”</i>and <i>Vardiello</i>. For other information about the selection of the corpus, you’ll find a dedicated section here.
+            Rather than working with the entire text, we focused on the <i>Introduction</i> (titled <i>Ntroduzzeione</i>), and two collection’s tales: <i>”La Gatta Cenerentola”</i>and <i>Vardiello</i>. For other information about the selection of the corpus, you’ll find a dedicated section <a href="#corp-sele">here</a>.
             Overall, we provided the manual transcription of 23 pages, amounting to a total of 6134 words.
             Once the model was created, we decided to train it on an additional text from the collection, namely <i>La Vecchia Scoperta</i>, to ensure its proper functionality.<br>
             </p>
@@ -382,7 +382,7 @@
                     <div class="timeline-step">
                       <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
                           <div class="inner-circle"></div>
-                          <p class="h6 mt-3 mb-1"><a href="#chatgpt">ChatGPT</a></p>
+                          <p class="h6 mt-3 mb-1"><a href="#chatgpt">Automatic Transcription</a></p>
                       </div>
                   </div>
                 </div>
@@ -397,7 +397,7 @@
        <!-- Task defintion -->
       <div class="section-subtitle" data-aos="fade-up">
        <div class="section-subtitle" data-aos="fade-up" id="taskdef">
-        <h2><b>Task defintion</b></h2>
+        <h2><b>Task definition</b></h2>
         <p>First and foremost, it is crucial to define the task of the project clearly, ensuring a precise understanding of its scope and objectives.
           The primary goal of the <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> project is to <b>train a model capable of faithfully transcribing the text</b> as it appears on the printed page. <br>
           Additionally, it seeks to compare the transcription performance of the Transkribus platform with that of ChatGPT.
@@ -585,16 +585,17 @@
             Once the Ground Truth pages are prepared, the next step is to train the <a href="#evaluation">Text Recognition model</a>.</p>
             <br>
             <br>
-            <figure id="figure-5.1"><img src="assets/img/gtex.png" alt="ground truth" style="height: 160px;"><figcaption><i>Fig. 2.3</i> The image shows the states of Transkribusthe, in particular the fundamental Ground Truth.</figcaption></figure>
+            <figure id="figure-5.1"><img src="assets/img/gtex.png" alt="ground truth" style="height: 160px;"><figcaption><i>Fig. 2.3</i> The image shows the states of Transkribus, in particular the fundamental Ground Truth.</figcaption></figure>
           </div><!-- End Section -->
 <br>
     <!-- ChatGPT -->
     <div class="section-subtitle" data-aos="fade-up" id="chatgpt">
-      <h2><b>ChatGPT</b></h2>
+      <h2><b>Automatic Transcription</b></h2>
     </div><!-- End Section Annotation guidelines -->
 
        <!-- Section -->
     <div class="container section-title" data-aos="fade-up">
+      <p>After training the Text Recognition Model starting from our Ground Truth pages, we used it to transcribe the pages from <i>La vecchia scoperta</i> selected as our test set.</p>
       <p>We proceeded with our analysis by using <b>ChatGPT</b>. <br>
         In this phase, we provided ChatGPT with images of the printed text from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, which serves as our raw test set. We tasked ChatGPT with transcribing these images. <br>
         In line with the approach we used in Transkribus, we didn’t crop the images, deliberately including headers, page numbers, and signature marks to preserve the resolution and integrity of the images. <br>
@@ -613,7 +614,7 @@
             <h2><b>Evaluation </b></h2>
             <img src="assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
           </div>
-          <p>Once the Ground Truth text for our corpus was ready, with proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
+          <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
           <div class="img-container d-flex justify-content-center py-3"><figure><img src="assets/img/learning_curve_basile.png" alt="Basile Printed Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed</figcaption></figure><figure><img src="assets/img/learning_curve_basile_base_model.png" alt="Basile Printed fine-tuned Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed with base model</figcaption></figure></div>
           <p>The charts show the percentage of error (on the y-axis) for both the training and the validation set over the epochs (x-axis). Transkribus' default paramethers were adopted for the training of both the models: the number of epochs was set to 100 and the early stoppings to 20. As shown in the figures above, the first model stopped the training after 87 epochs, since there was no further improvement on the CER, while the second one stopped after 96 epochs. </p>
           <p>The fine-tuned model was then used to automatically transcribe our test set, for which we chose a selection of pages from a fourth tale included in <i>Lo Cunto de li Cunte</i>, namely <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the results.</p>
@@ -626,10 +627,10 @@
         <p>Given that, according to <a href="https://help.transkribus.org/character-error-rate-and-learning-curve" target="_blank">Transkribus documentation</a>, a model for printed text with a CER on the validation set between 0.5% and 2% is believed to be very efficient, we can consider both the trained model highly performing. As mentioned above, however, we selected <b>Basile Printed_fine-tuned</b> for automatically transcribing the pages from <i>La vecchia scoperta</i>. Based on the transcription of unseen pages, we can say that:
           <ul>
             <li><b>Overall transcription</b>: the transcription needed few corrections, mainly on those sections of the page there were not part of the validation set - like the <b>headings</b> that introduce each tale - or more complex elements, like <b>drop-caps</b>. Text Recognition Models can be applied with or without a previous layout recognition. In our case, the direct application of the text recognition model caused the recognition and transcription of page numbers and catch-words, so, in order to consistently identify regions, it was necessary to perform a manual segmentation and re-apply the Text Recognition Model on the segmented pages.</li>
-            <figure><img src="assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 300px;"><figcaption><i>Fig. 5.1</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
+            <figure id="italic-tag"><img src="assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 300px;"><figcaption><i>Fig. 5.1</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
             <li><b>S-graphemes normalization</b>: the model correctly identified and transcribed the majority of s-graphemes.</li>
             <figure><img src="assets/img/basile_vecchia_scoperta_2.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 300px;"><figcaption><i>Fig. 5.2</i> The page shows the correct and incorrect transcriptions of s-graphemes performed by our custom model</figcaption></figure>
-            <li><b>Tags for italic text</b>: as shown in <i>Fig. 5.1</i>, the model wasn't able to tag italic text.</li>
+            <li><b>Tags for italic text</b>: as shown in <a href="#italic-tag"><i>Fig. 5.1</i></a>, the model wasn't able to tag italic text.</li>
           </ul>
         </p>
         

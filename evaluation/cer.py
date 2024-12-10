@@ -66,36 +66,3 @@ print("GPT WER and CER for page 2:\n", f"WER: {wer_gpt_page_2:.2f}, CER: {cer_gp
 wer_gpt_page_3 = pywer.wer(ref_page_3, gpt_page_3)
 cer_gpt_page_3 = pywer.cer(ref_page_3, gpt_page_3)
 print("GPT WER and CER for page 3:\n", f"WER: {wer_gpt_page_3:.2f}, CER: {cer_gpt_page_3:.2f}")
-
-
-""" mapping = {
-    "’": "'",
-    "í": "i",
-    "é": "è"
-}
-
-def replace_char(list_of_strings, mapping_dict):
-    # initialize empty list
-    updated_list = []
-    # for each line in the input list...
-    for line in list_of_strings:
-        # initialize an empty list...
-        updated_line = []
-        # split the line at whitespace and iterate over the words...
-        for word in line.split():
-            # iterate over each character (= for char in word), check for the inclusion of the key <char> in the input dictionary and return <char> as default value if the key doesn't exist (= mapping_dict.get(char, char)), then join the characters
-            updated_word = ''.join(mapping_dict.get(char, char) for char in word)
-            # append the word to the line
-            updated_line.append(updated_word)
-        # append the line to the list
-        updated_list.append(' '.join(updated_line))
-    
-    return updated_list
-
-pred_corrected = replace_char(pred_gpt, mapping)
-
-wer_gpt = pywer.wer(references, pred_corrected)
-cer_gpt = pywer.cer(references, pred_corrected)
-print("GPT overall WER and CER after character replacement:")
-print(f"WER: {wer_gpt:.2f}, CER: {cer_gpt:.2f}") """
-
