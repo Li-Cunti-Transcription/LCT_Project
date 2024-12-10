@@ -54,8 +54,9 @@
         <li><a href="#references"><i class="bi bi-pen"></i><span>References</span></a></li>
         <li><a href="#aboutus"><i class="bi bi-person"></i><span>About us</span></a></li>
       </ul>
-    </nav>
 
+    </nav>
+    
   </header>
 
   <main class="main">
@@ -338,7 +339,7 @@
 
 </section><!-- /Portfolio Section -->
     <!-- Resume Section -->
-    <section id="workflow" class="resume section">
+<section id="workflow" class="resume section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" style="padding-left:5em; padding-right: 5em;">
@@ -408,7 +409,7 @@
       </div><!-- End Section Task defintion -->
 
       <!-- Annotation guidelines -->
-        <div class="section-subtitle" data-aos="fade-up" id="annguide">
+        <div class="section-title" data-aos="fade-up" id="annguide">
           <h2><b>Annotation guidelines</b></h2>
         </div><!-- End Section Annotation guidelines -->
 
@@ -594,17 +595,18 @@
         In line with the approach we used in Transkribus, we didn’t crop the images, deliberately including headers, page numbers, and signature marks to preserve the resolution and integrity of the images. <br>
         <a href="#sub">Subsequently</a>, we instructed ChatGPT to transcribe the text from the input images while preserving the original line breaks and omitting unnecessary elements.</p>
         <br>
-      <figure id="figure-5.1"><img src="assets/img/gpt_prompt_1.png" alt="gpt prompt" style="height: 350px;"><figcaption><i>Fig. 2.3</i> The image shows the first ChatGPT prompt.</figcaption></figure>
+      <figure id="figure-5.1"><img src="assets/img/gpt_prompt_1.png" alt="gpt prompt" style="height: 350px;"><figcaption><i>Fig. 2.4</i> The image shows the first ChatGPT prompt.</figcaption></figure>
     </div><!-- End Section -->
+</section>
 
     <!-- Services Section -->
-    <section id="evaluation" class="resume section"> <!-- Evaluation Section -->
+  <section id="evaluation"> <!-- Evaluation Section -->
 
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-subtitle" data-aos="fade-up" class="resume section">
           <div class="decorated-title">
             <img src="assets/img/Cornicetta.jpg" alt="Cornicetta sinistra" class="cornice">
-            <h2><b>Evaluation </b></h2>
+            <h2><b>Evaluation</b></h2>
             <img src="assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
           </div>
           <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
@@ -614,7 +616,7 @@
         </div><!-- End Section Title -->
 
       <!-- Section Title -->
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-subtitle" data-aos="fade-up">
         <h2>Transkribus</h2>
         <p>As mentioned in the <a href="#workflow">Workflow</a> section, our main goal was to train a model able to faithfully transcribe the text as printed on the page, with the only disclaimer of the normalization of s-graphemes, that the model should therefore have been able to interpret correctly by the end of the training. As consistenly used throughout the edition, we also decided to tag italic text as such, but the ability of the model to identify and mark the text was not our primary concern as not relevant for the performance evaluation comparison.</p>
         <p>Given that, according to <a href="https://help.transkribus.org/character-error-rate-and-learning-curve" target="_blank">Transkribus documentation</a>, a model for printed text with a CER on the validation set between 0.5% and 2% is believed to be very efficient, we can consider both the trained model highly performing. As mentioned above, however, we selected <b>Basile Printed_fine-tuned</b> for automatically transcribing the pages from <i>La vecchia scoperta</i>. Based on the transcription of unseen pages, we can say that:
@@ -629,7 +631,7 @@
         
       </div><!-- End Section Title -->
 
-      <div class="section-title justify-content-center" data-aos="fade-up" id="sub">
+      <div class="section-subtitle justify-content-center" data-aos="fade-up" id="sub">
         <h2>ChatGPT</h2>
         <p>Our next step was to prompt ChatGPT by presenting it the same pages used for testing Transkribus' fine-tuned model. As shown in the following figure, the first transcription provided by GPT took into account <b>page numbers</b> and <b>catch-words</b> and <b>collapsed line breaks</b>.</p>
         <figure><img src="assets/img/gpt_2.png" alt="gpt-transcription-2" style="height: 250px;"><figcaption><i>Fig. 5.3</i> ChatGPT's automatic transcription after the first prompt</figcaption></figure>
@@ -642,7 +644,7 @@
         <p>A quick analysis of the transcription provided by ChatGPT shows that, unlike Transkribus' model, there wasn't any difficulty in the transcription of headings, while the most troublesome element, as expected, is represented by the normalization of s-graphemes.</p>
       </div><!-- End Section Title -->
 
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-subtitle" data-aos="fade-up">
         <h2>Results</h2>
         <p>In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. <!--qualche dettaglio sulle formule-->
           Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment methodology</a> and provided not only the overall WER and CER scores, but also a page-level computation.
@@ -836,7 +838,7 @@
             </div>
       </div><!-- End Section Title -->
 
-    </section><!-- /Services Section -->
+  </section><!-- /Services Section -->
    
   
     <section id="conclusion"><!-- conclusion -->
