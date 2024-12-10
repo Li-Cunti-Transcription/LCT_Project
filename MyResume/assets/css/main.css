@@ -1734,3 +1734,7 @@ section,
 .metrics-table {
   margin: 2em 0;
 }
+.ref-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
