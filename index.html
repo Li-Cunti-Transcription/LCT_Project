@@ -609,10 +609,10 @@
             <h2><b>Evaluation</b></h2>
             <img src="LCT-REA/assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
           </div>
-          <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
-          <div class="img-container d-flex justify-content-center py-3"><figure><img src="LCT-REA/assets/img/learning_curve_basile.png" alt="Basile Printed Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed</figcaption></figure><figure><img src="LCT-REA/assets/img/learning_curve_basile_base_model.png" alt="Basile Printed fine-tuned Learning Curve" style="height: 200px;"><figcaption>Learning Curve of Basile Printed with base model</figcaption></figure></div>
+          <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). We decided to train two models on Basile's <i>Lo Cunto de li Cunte</i> edition. The first one, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which Italian. By doing so, the CER on the validation set went down to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
+          <div class="img-container d-flex justify-content-center py-3"><figure><img src="LCT-REA/assets/img/learning_curve_basile.png" alt="Basile Printed Learning Curve" style="height: 200px;"><figcaption><i>Fig. 5.1 </i>Learning Curve of Basile Printed</figcaption></figure><figure><img src="LCT-REA/assets/img/learning_curve_basile_base_model.png" alt="Basile Printed fine-tuned Learning Curve" style="height: 200px;"><figcaption><i>Fig. 5.2 </i>Learning Curve of Basile Printed with base model</figcaption></figure></div>
           <p>The charts show the percentage of error (on the y-axis) for both the training and the validation set over the epochs (x-axis). Transkribus' default paramethers were adopted for the training of both the models: the number of epochs was set to 100 and the early stoppings to 20. As shown in the figures above, the first model stopped the training after 87 epochs, since there was no further improvement on the CER, while the second one stopped after 96 epochs. </p>
-          <p>The fine-tuned model was then used to automatically transcribe our test set, for which we chose a selection of pages from a fourth tale included in <i>Lo Cunto de li Cunte</i>, namely <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the results.</p>
+          <p>The fine-tuned model was then used to automatically transcribe our test set, for which we chose a selection of pages from a fourth tale included in <i>Lo Cunto de li Cunte</i>, namely <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the output transcriptions obtained by the models and the evaluation results.</p>
         </div><!-- End Section Title -->
 
       <!-- Section Title -->
@@ -622,10 +622,10 @@
         <p>Given that, according to <a href="https://help.transkribus.org/character-error-rate-and-learning-curve" target="_blank">Transkribus documentation</a>, a model for printed text with a CER on the validation set between 0.5% and 2% is believed to be very efficient, we can consider both the trained model highly performing. As mentioned above, however, we selected <b>Basile Printed_fine-tuned</b> for automatically transcribing the pages from <i>La vecchia scoperta</i>. Based on the transcription of unseen pages, we can say that:
           <ul>
             <li><b>Overall transcription</b>: the transcription needed few corrections, mainly on those sections of the page there were not part of the validation set - like the <b>headings</b> that introduce each tale - or more complex elements, like <b>drop-caps</b>. Text Recognition Models can be applied with or without a previous layout recognition. In our case, the direct application of the text recognition model caused the recognition and transcription of page numbers and catch-words, so, in order to consistently identify regions, it was necessary to perform a manual segmentation and re-apply the Text Recognition Model on the segmented pages.</li>
-            <figure id="figure-5.1"><img src="LCT-REA/assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.1</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
+            <figure id="figure-5.1"><img src="LCT-REA/assets/img/basile_vecchia_scoperta_1.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.3</i> The image shows the automatic transcription of the first page from <i>La vecchia scoperta</i> before manual segmentation</figcaption></figure>
             <li><b>S-graphemes normalization</b>: the model correctly identified and transcribed the majority of s-graphemes.</li>
-            <figure id="figure-5.1"><img src="LCT-REA/assets/img/basile_vecchia_scoperta_2.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.2</i>The page shows the correct and incorrect transcriptions of s-graphemes performed by our custom model</figcaption></figure>
-            <li><b>Tags for italic text</b>: as shown in <a href="#italic-tag"><i>Fig. 5.1</i></a>, the model wasn't able to tag italic text.</li>
+            <figure id="figure-5.1"><img src="LCT-REA/assets/img/basile_vecchia_scoperta_2.png" alt="Vecchia Scoperta Transkribus Transcription-page 117" style="height: 350px;"><figcaption><i>Fig. 5.4</i>The page shows the correct and incorrect transcriptions of s-graphemes performed by our custom model</figcaption></figure>
+            <li><b>Tags for italic text</b>: as shown in <a href="#italic-tag"><i>Fig. 5.3</i></a>, the model wasn't able to tag italic text.</li>
           </ul>
         </p>
         
@@ -634,12 +634,12 @@
       <div class="section-subtitle justify-content-center" data-aos="fade-up" id="sub">
         <h2>ChatGPT</h2>
         <p>Our next step was to prompt ChatGPT by presenting it the same pages used for testing Transkribus' fine-tuned model. As shown in the following figure, the first transcription provided by GPT took into account <b>page numbers</b> and <b>catch-words</b> and <b>collapsed line breaks</b>.</p>
-        <figure><img src="LCT-REA/assets/img/gpt_2.png" alt="gpt-transcription-2" style="height: 250px;"><figcaption><i>Fig. 5.3</i> ChatGPT's automatic transcription after the first prompt</figcaption></figure>
-        <p>In a following phase we asked ChatGPT to preserve line breaks in the transcription and, in order to obtain a transcription compliant with our annotation guidelines, to ignore page numbers, catch-words and, where needed, running titles.</p>
+        <figure><img src="LCT-REA/assets/img/gpt_2.png" alt="gpt-transcription-2" style="height: 250px;"><figcaption><i>Fig. 5.5</i> ChatGPT's automatic transcription after the first prompt</figcaption></figure>
+        <p>In a following phase we asked ChatGPT to preserve line breaks in the transcription and, in order to obtain an output compliant with our annotation guidelines, to ignore page numbers, catch-words and, where needed, running titles.</p>
         <div class="img-container d-flex">
-          <figure><img src="LCT-REA/assets/img/gpt_3.png" alt="gpt-transcription-3" style="height: 150px;"><figcaption><i>Fig. 5.4</i> Transcription without page numbers, catch-words and with line breaks preserved</figcaption></figure>
-          <figure><img src="LCT-REA/assets/img/gpt_4.png" alt="gpt-transcription-4" style="height: 150px;"><figcaption><i>Fig. 5.5</i> Application of the same criteria to the following page</figcaption></figure>
-          <figure><img src="LCT-REA/assets/img/gpt_5.png" alt="gpt-transcription-5" style="height: 150px;"><figcaption><i>Fig. 5.6</i> Transcription without running titles</figcaption></figure>
+          <figure><img src="LCT-REA/assets/img/gpt_3.png" alt="gpt-transcription-3" style="height: 150px;"><figcaption><i>Fig. 5.6</i> Transcription without page numbers, catch-words and with line breaks preserved</figcaption></figure>
+          <figure><img src="LCT-REA/assets/img/gpt_4.png" alt="gpt-transcription-4" style="height: 150px;"><figcaption><i>Fig. 5.7</i> Application of the same criteria to the following page</figcaption></figure>
+          <figure><img src="LCT-REA/assets/img/gpt_5.png" alt="gpt-transcription-5" style="height: 150px;"><figcaption><i>Fig. 5.8</i> Transcription without running titles</figcaption></figure>
         </div>
         <p>A quick analysis of the transcription provided by ChatGPT shows that, unlike Transkribus' model, there wasn't any difficulty in the transcription of headings, while the most troublesome element, as expected, is represented by the normalization of s-graphemes.</p>
       </div><!-- End Section Title -->
@@ -649,7 +649,7 @@
         <p style="padding-bottom:0.5em;">In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. <!--qualche dettaglio sulle formule-->
           Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment methodology</a> and provided not only the overall WER and CER scores, but also the scores per page.</p>
           <p><b>Overall scores:</b></p>
-            <table class="table metrics-table">
+            <table class="table table-hover metrics-table">
               <tr>
               <th></th>
               <th>WER</th>
@@ -667,7 +667,7 @@
               </tr>
             </table>
             <p><b>Scores per page:</b></p>
-            <table class="table metrics-table">
+            <table class="table table-hover metrics-table">
               <tr>
               <th>Model</th>
               <th>Page</th>
@@ -711,7 +711,7 @@
                 <td>6.61</td>
               </tr>
             </table>
-            <p>As a complementary tool that could provide us with an overall view of the typologies of errors and the main difficulties faced in the text recognition process, we used Python <code>difflib</code> library for producing an aligned comparison of the reference and prediction texts.</p>
+            <p>As a <b>complementary tool</b>that could provide us with an overall view of the typologies of errors and the main difficulties faced in the text recognition process, we used Python <code>difflib</code> library for producing an aligned comparison of the <b>reference</b> text and <b>ChatGPT prediction</b>.</p>
             <div class="accordion accordion-flush" id="accordionFlushExample" class="section-subtitle">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -835,8 +835,26 @@
               </div>
             </div>
             <div class="section-subtitle">
-            <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the quality of the printed material, where often ink stains and other damages made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable. <!--space between apostrophe and following word--> <br>However, some errors could be easily addressed by refining prompts. In particular, we immediately realized that, in the transcription provided by ChatGPT, all severe-stressed "e" characters were transcribed as acute-stressed, and that the apostrophe was not consistently transcribed, but frequently replaced with a right single quotation character. ChatGPT was able to correct almost all the occurrences of the described phenomena. The WER and CER metrics applied on the transcriptions obtained after refining the prompts show the following results:</p>
-            <table class="table metrics-table">
+            <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the <b>quality of the printed material</b>, where ink stains and other damages often made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable.<br>The main issue in the output provided by ChatGPT is is represented by the incorrect identification of the "<b>long-s</b>", always transcribed as "f" by the model. Attempts to refine prompts in order to obtain a correct transcription of "long-s" characters were <b>not successfull</b>, as shown in the following scores for page 1 after the request to replace "long-s" characters:</p>
+            <table class="table table-hover metrics-table">
+              <tr>
+                <th></th>
+                <th>WER</th>
+                <th>Increase on WER</th>
+                <th>CER</th>
+                <th>Increase on CER</th>
+                </tr>
+                <tr>
+                <td>Page 1</td>
+                  <td>18.39</td>
+                  <td>+3.14</td>
+                  <td>3.73</td>
+                  <td>+0.63</td>
+                </tr>
+            </table>
+            <p>In some cases, ChatGPT was able to transcribe a round-s, but there were also instances where the model was unable to distinguish between long-s and "f", extending the rendering to the latter and leading to an increase of the error rate with respect to the previous scores on the same page.</p> 
+            <p>However, some errors could be easily addressed by <b>refining prompts</b>. In particular, we realized that, in the transcription provided by ChatGPT, all severe-stressed "e" ("<b>è</b>") characters were transcribed as acute-stressed, and that the <b>apostrophe</b> was not consistently transcribed, but frequently replaced with a <b>right single quotation mark</b>character. ChatGPT was <b>able to correct</b> almost all the occurrences of the described phenomena. The WER and CER metrics applied on the transcriptions obtained after refining the prompts show the following results:</p>
+            <table class="table table-hover metrics-table">
               <tr>
                 <th></th>
                 <th>WER</th>
@@ -873,24 +891,45 @@
                   <td>-0.99</td>
                 </tr>
               </table>
-            <p>Addressing these errors lead to some improvements in the error rates, however, the main issue in the transcription provided by ChatGPT is represented by the incorrect identification of the "long-s", always transcribed as "f" in the output transcription. Attempts to refine prompts in order to obtain a correct transcription of "long-s" characters were only partially successfull, as shown in the following scores for page 1 after the replacement of "long-s" characters:</p>
-            <table class="table metrics-table">
-              <tr>
-                <th></th>
-                <th>WER</th>
-                <th>Decrease on WER</th>
-                <th>CER</th>
-                <th>Decrease on CER</th>
-                </tr>
+              <p>Another factor to consider when evaluating the obtained scores is the <b>insertion of whitespaces</b> between an apostrophe and the following word, which significantly impacts the character error rate and, more importantly, the word error rate, as it can lead to segmentation issues at the word level. To address this problem, the text generated after refining the prompts was <b>cleaned</b> to handle cases of <b>elision</b> in a way consistent with the ground truth transcription. A new performance evaluation on the output resulted in the following scores:</p>
+              <table class="table table-hover metrics-table">
                 <tr>
-                <td>Page 1</td>
-                  <td>14.35</td>
-                  <td>-0.90</td>
-                  <td>2.62</td>
-                  <td>-0.48</td>
-                </tr>
-            </table>
-            <p>In some cases, ChatGPT was able to transcribe a round-s, but there were also instances where the model was unable to distinguish between long-s and "f", extending the rendering to the latter and leading to an increase of the error rate with respect to the previous scores, and to a minor decrease with respect to the first transcription.</p>
+                  <th></th>
+                  <th>WER</th>
+                  <th>Decrease on WER</th>
+                  <th>CER</th>
+                  <th>Decrease on CER</th>
+                  </tr>
+                  <tr>
+                    <td>Overall score</td>
+                    <td>18.74</td>
+                    <td>-6.04</td>
+                    <td>4.26</td>
+                    <td>-1.25</td>
+                  </tr>
+                  <tr>
+                    <td>Page 1</td>
+                    <td>5.83</td>
+                    <td>-9.42</td>
+                    <td>1.43</td>
+                    <td>-1.67</td>
+                  </tr>
+                  <tr>
+                    <td>Page 2</td>
+                    <td>22.99</td>
+                    <td>-5.48</td>
+                    <td>5.10</td>
+                    <td>-1.19</td>
+                  </tr>
+                  <tr>
+                    <td>Page 3</td>
+                    <td>24.82</td>
+                    <td>-3.90</td>
+                    <td>5.62</td>
+                    <td>-0.99</td>
+                  </tr>
+              </table>
+            <p>Addressing these errors lead to some improvements in the error rates, especially if we consider the Word Error Rate, with an overall score which decreased by 6.04% and even more for the first page of transcription.
       </div><!-- End Section Title -->
 
   </section><!-- /Services Section -->
@@ -906,8 +945,92 @@
           <img src="LCT-REA/assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
         <p>After evaluating the performance of both models on the raw test set, we found that ChatGPT's transcription accuracy is noticeably lower than that of the model we developed. However, our analysis of ChatGPT's output revealed that some errors could be addressed by refining the prompts, manually correcting individual characters, or simply cleaning up the text. Given the time-intensive nature of training Transkribus models, ChatGPT's rapid transcription can provide a solid foundation for semi-automated corrections. <br>
-          Ultimately, the decision of which model to use for transcription depends on the specific material, the user's expertise and requirements, as well as the available resources, including time constraints. <br>
-          For accurate transcriptions of historical printed texts, leveraging a pre-trained public Transkribus model can be a practical option, allowing users to save time without the need to train a customized model. In this context, considering the language and era of the text, the Transkribus Print M1 model emerges as a strong alternative. On our test set, this model's performance ranks between that of our fine-tuned Basile Printed model and ChatGPT, making it a viable choice for achieving quality automated transcriptions.</p>
+          Ultimately, the decision of which model to use for transcription depends on the specific <b>material</b>, the <b>user's expertise and requirements</b>, as well as the available <b>resources</b>, including time constraints. <br>
+          For <b>accurate</b> transcriptions of <b>historical printed texts</b>, leveraging a <b>pre-trained public Transkribus model</b> can be a practical option, allowing users to save time without the need to train a customized model. In this context, considering the language and time period of the text, the <b>Transkribus Print M1</b> model emerges as a strong alternative. On our test set, this model's <b>performance</b> ranks between that of our fine-tuned <b>Basile Printed model</b> and <b>ChatGPT</b>, making it a viable choice for achieving quality automated transcriptions.<br> A summary of the WER and CER scores for each model is presented in the following tables:</p>
+          <p style="padding-top: 1.5em;"><b>Overall scores:</b></p>
+          <table class="table table-hover metrics-table">
+            <tr>
+              <th></th>
+              <th>Basile Printed-fine_tuned</th>
+              <th>Transkribus Print M1</th>
+              <th>ChatGPT</th>
+            </tr>
+            <tr>
+              <td>WER</td>
+              <td>2.44</td>
+              <td>11.55</td>
+              <td>18.74</td>
+            </tr>
+            <tr>
+              <td>CER</td>
+              <td>0.51</td>
+              <td>1.92</td>
+              <td>4.26</td>
+            </tr>
+          </table>
+          <p><b>Scores per page:</b></p>
+          <table class="table table-hover metrics-table">
+            <tr>
+              <th>Model</th>
+              <th>Page</th>
+              <th>WER</th>
+              <th>CER</th>
+              </tr>
+              <tr>
+                <td>Basile Printed_fine-tuned</td>
+                <td>1</td>
+                <td>7.17</td>
+                <td>1.59</td>
+              </tr>
+              <tr>
+                <td>Transkribus Print M1</td>
+                <td>1</td>
+                <td>17.04</td>
+                <td>3.02</td>
+              </tr>
+              <tr>
+                <td>ChatGPT</td>
+                <td>1</td>
+                <td>15.25</td>
+                <td>3.10</td>
+              </tr>
+              <tr>
+                <td>Basile Printed_fine-tuned</td>
+                <td>2</td>
+                <td>0.73</td>
+                <td>0.12</td>
+              </tr>
+              <tr>
+                <td>Transkribus Print M1</td>
+                <td>2</td>
+                <td>8.76</td>
+                <td>1.43</td>
+              </tr>
+              <tr>
+                <td>ChatGPT</td>
+                <td>2</td>
+                <td>28.47</td>
+                <td>6.29</td>
+              </tr>
+              <tr>
+                <td>Basile Printed_fine-tuned</td>
+                <td>3</td>
+                <td>0.35</td>
+                <td>0.06</td>
+              </tr>
+              <tr>
+                <td>Transkribus Print M1</td>
+                <td>3</td>
+                <td>9.93</td>
+                <td>1.54</td>
+              </tr>
+              <tr>
+                <td>ChatGPT</td>
+                <td>3</td>
+                <td>28.72</td>
+                <td>6.61</td>
+              </tr>
+          </table>
       </div><!-- End Section Title -->
     </section><!-- /End Conclusion-->
 
