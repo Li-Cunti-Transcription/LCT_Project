@@ -905,10 +905,9 @@
           <h2><b>Conclusion </b></h2>
           <img src="assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        <p>tema che abbiamo scelto <br>
-          contesto in cui si colloca <br>
-          motivo della scelta di questo tema?</p>
+        <p>After evaluating the performance of both models on the raw test set, we found that ChatGPT's transcription accuracy is noticeably lower than that of the model we developed. However, our analysis of ChatGPT's output revealed that some errors could be addressed by refining the prompts, manually correcting individual characters, or simply cleaning up the text. Given the time-intensive nature of training Transkribus models, ChatGPT's rapid transcription can provide a solid foundation for semi-automated corrections. <br>
+          Ultimately, the decision of which model to use for transcription depends on the specific material, the user's expertise and requirements, as well as the available resources, including time constraints. <br>
+          For accurate transcriptions of historical printed texts, leveraging a pre-trained public Transkribus model can be a practical option, allowing users to save time without the need to train a customized model. In this context, considering the language and era of the text, the Transkribus Print M1 model emerges as a strong alternative. On our test set, this model's performance ranks between that of our fine-tuned Basile Printed model and ChatGPT, making it a viable choice for achieving quality automated transcriptions.</p>
       </div><!-- End Section Title -->
     </section><!-- /End Conclusion-->
 
@@ -921,9 +920,11 @@
           <h2><b>To be continued... </b></h2>
           <img src="assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
-        <p>Since we observed that the model we developed functions correctly and has a relatively low margin of error, we couldn’t help but reflect on its potential future applications. We then thought it would be interesting to apply this model to another printed text from the same period but belonging to a different context, to evaluate whether the results would be equally satisfactory.<br>
-          We therefore identified the 1779 edition by Masi e Com. of the text *La Secchia Rapita* written by Alessandro Tassoni. It is a mock-heroic poem, whose tone is very similar to that of “Lo cunto de li cunti”,, but the context is quite different. Tassoni, in fact, is a Modenese author who employs a completely different style, ranging from epic tones to sudden shifts into more burlesque ones. Clearly, there is no trace of Neapolitan in his work; instead, he draws from the language first used by Ariosto and later by Tasso, with the addition of comedic, popular elements.</p>
-        </p>
+        <p>Since we observed that the model we developed functions correctly and has a relatively low margin of error, we couldn’t help but reflect on its potential future applications. We then thought it would be interesting to apply this model to other printed texts from the same period but belonging to a different context, to evaluate whether the results would be equally satisfactory.<br>
+          We therefore identified the 1779 edition by Masi e Com. of the text *La Secchia Rapita* written by Alessandro Tassoni. It is a mock-heroic poem, whose tone is very similar to that of “Lo cunto de li cunte”, but the context is quite different. Tassoni, in fact, is a Modenese author who employs a completely different style, ranging from epic tones to sudden shifts into more burlesque ones. Clearly, there is no trace of Neapolitan in his work; instead, he draws from the language first used by Ariosto and later by Tasso, with the addition of comedic, popular elements. <br> 
+          We manually transcribed the first 22 pages of La secchia rapita and trained a new model using again the Transkribus Print M1 as the base model. We automatically selected the 10% of the training set for the validation and obtained a model with Character Error Rate of 0.59%.
+</p>
+<figure><img src="" class="writers" alt="Graphic of the learning curve of Basile_Tassoni_model"  style="width: 100%; height: auto; object-fit: cover;"><figcaption><i>Fig.6  </i> The image shows the graphic of the learning curve of Basile_Tassoni_model.</figcaption></figure>
       </div><!-- End Section Title -->
     </section><!-- /End Conclusion-->
 
