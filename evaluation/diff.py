@@ -30,4 +30,13 @@ def compute_diff(references_list, predicted_list, diff_file="evaluation/diff_fil
             f.write("\n".join(diff_list))
             f.write("\n" + "="*50 + "\n")
 
-compute_diff(references, predictions)
+#compute_diff(references, predictions)
+
+html_diff = difflib.HtmlDiff()
+
+# HTML difference table
+html_content = html_diff.make_table(references, predictions, fromdesc="Ground Truth Text", todesc="GPT Transcription")
+
+# Save the result to an HTML file
+with open("evaluation/diff_table.html", "w", encoding="utf-8") as file:
+    file.write(html_content)

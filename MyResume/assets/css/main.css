@@ -478,8 +478,8 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
-  padding-left: 5em;
-  padding-right: 5em;
+ /*  padding-left: 4em;
+  padding-right: 4em; */
 }
 
 .section-title h2 {
@@ -490,7 +490,7 @@ section,
   position: relative;
 }
 
-.section-title h2:before {
+/* .section-title h2:before {
   content: "";
   position: absolute;
   display: block;
@@ -501,9 +501,9 @@ section,
   right: 0;
   bottom: 1px;
   margin: auto;
-}
+} */
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -514,7 +514,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -547,6 +547,13 @@ section,
 }
 .section-subtitle ul figure {
   padding: 2em 0;
+  margin-left: 10em;
+}
+#evaluation ul figcaption {
+  width: 70%;
+}
+#evaluation figure {
+  padding: 1.5em 0;
 }
 .corpusimg{
   height: 300px;
@@ -1701,3 +1708,29 @@ section,
   cursor: pointer;
 }
 
+/* table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right} */
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+
+#evaluation .accordion {
+  margin-top: 2em;
+  width: 99%;
+  justify-self: center;
+}
+#evaluation .accordion-body {
+  height: 20em;
+  overflow-y: scroll;
+}
+
+.accordion-body table {
+  margin-left: 5.5em;
+  margin-top: 2em;
+}
+
+.metrics-table {
+  margin: 2em 0;
+}
