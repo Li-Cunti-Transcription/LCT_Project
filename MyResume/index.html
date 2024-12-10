@@ -141,7 +141,7 @@
 
       <!-- Section Title -->
       <div class="section-subtitle" data-aos="fade-up">
-        <h2><b>Documents</b></h2>
+        <h2>Documents</h2>
           <p>Once we selected “Lo Cunto de li Cunte” as the main work for our transcription project, the next step was to identify the edition and the portions of text to transcribe in order to begin the creation of our model. <br>
             We chose to base our training corpus on one of the first editions available, in particular we selected Porcelli’s 1788, which is readily available on <a href="https://www.europeana.eu/it/item/92004/object_NKCR__37L000213T203A7XWB0">Europeana</a>. <br>
             We would also like to emphasize that all the titles of the texts and the proper names mentioned, refer to the edition we used, whereas later editions of the work feature different versions.<br>
@@ -150,14 +150,7 @@
             Once the model was created, we decided to train it on an additional text from the collection, namely <i>La Vecchia Scoperta</i>, to ensure its proper functionality.<br>
             </p>
       </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-        </div>
-
-      </div>
+      
           <!-- Stats Section -->
     <section id="stats" class="stats section">
 
@@ -199,7 +192,7 @@
 
   <!-- Section Title -->
   <div class="container section-subtitle" data-aos="fade-up">
-    <h2>Cunti</h2>
+    <h2>Lo cunto de li cunte</h2>
     <p></p>
   </div><!-- End Section Title -->
 
@@ -396,9 +389,9 @@
 
        <!-- Task defintion -->
       <div class="section-subtitle" data-aos="fade-up">
-       <div class="section-subtitle" data-aos="fade-up" id="taskdef">
+       <div class="section-title" data-aos="fade-up" id="taskdef">
         <h2><b>Task definition</b></h2>
-        <p>First and foremost, it is crucial to define the task of the project clearly, ensuring a precise understanding of its scope and objectives.
+        <p>First and foremost, it is crucial to define the task of the project clearly, ensuring a precise understanding of its scope and objectives. <br>
           The primary goal of the <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> project is to <b>train a model capable of faithfully transcribing the text</b> as it appears on the printed page. <br>
           Additionally, it seeks to compare the transcription performance of the Transkribus platform with that of ChatGPT.
           The analysis starts with the <b>Transkribus</b> platform, employing an annotated corpus as a training set and a raw corpus for evaluation. The focus then shifts to <b>ChatGPT</b>, directly instructing it to produce an accurate transcription of the raw test set. <br>
@@ -406,10 +399,10 @@
       </div><!-- End Section Task defintion -->
 
 
-      <div class="section-subtitle" data-aos="fade-up" id="corpsele">
+      <div class="section-title" data-aos="fade-up" id="corpsele">
         <h2><b>Corpus selection</b></h2>
         <p>In the process of selecting the text, we aimed to identify portions that we considered both the most relevant and diverse to ensure the model would perform optimally. <br>
-          Specifically, we chose to manually transcribe 11 pages of the <i>Introduzzeione</i> (Introduction) , as they contain the framework of the entire work; 9 pages of <i>La Gatta Cenerentola</i> (The Cat Cinderella), the most famous novella in the corpus and the earliest version of the globally known Cinderella tale; and finally, 8 pages of <i>Vardiello</i>, to ensure our corpus had a sufficient number of pages. These transcriptions were used to build the training corpus.
+          Specifically, we chose to manually transcribe 11 pages of the <i>Ntroduzzeione</i> (Introduction), as they contain the framework of the entire work; 9 pages of <i>La Gatta Cenerentola</i> (The Cat Cinderella), the most famous novella in the corpus and the earliest version of the globally known Cinderella tale; and finally, 8 pages of <i>Vardiello</i>, to ensure our corpus had a sufficient number of pages. These transcriptions were used to build our <b>training set</b>. <br>
           <b>Our raw test set</b> is based on another tale from <i>Lo cunto de li cunte</i>, titled <i>La vecchia scoperta</i>. <br>
           Unlike the training corpus, these pages were not manually transcribed by us. Instead, they were transcribed by the best-performing model generated during the Text Recognition Model and by ChatGPT.</p>
       </div><!-- End Section Task defintion -->
@@ -436,7 +429,7 @@
 
        <!-- Section -->
       <div class="container section-title" data-aos="fade-up">
-        <p>Once the texts were structured with regions and baselines, we began transcribing them. To ensure accurate work and create a reliable, well-executed, and unambiguous annotated corpus, we developed a detailed annotation guideline that emphasized the rules we followed during the transcription process.</p>
+        <p>Once the texts were structured with regions and baselines, we began transcribing them. To ensure accurate work and create a reliable, well-executed, and unambiguous annotated corpus, we developed this detailed annotation guideline that emphasized the rules we followed during the transcription process.</p>
         <br>
         <p>The transcription <b>followed the text</b> for what concerns:</p>
       </div><!-- End Section -->
@@ -477,7 +470,7 @@
       </tr>
   </tbody>
 </table>
-<p>Click on the pictures to zoom in!</p>
+<p style="margin-left: 162px;"><i class="bi bi-zoom-in"></i> Click on the pictures to zoom in!</p>
 <!-- Modale -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -504,13 +497,13 @@
         <tr>
             <th scope="row">Page numbers</th>
             <td><img src="assets/img/expnumber.png" class="table-img" alt="Numbers of pages example" title="Click to zoom in!" onclick="zoomImage('assets/img/expnumber.png', 'This is an example of page number in page 59 of <i>Vardiello</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
-            <td class="table-txt">Page numbers, positioned at the bottom, have been ignored.
+            <td class="table-txt">Page numbers, positioned at the top left and top right corner of the pages, have been ignored.
             </td>
         </tr>
         <tr>
-            <th scope="row">Headers</th>
+            <th scope="row">Headers and running titles</th>
             <td><img src="assets/img/headerex.png" class="table-img" alt="Headers example" onclick="zoomImage('assets/img/headerex.png', 'This is an example of headers in page 77 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
-            <td class="table-txt">Headers, that repat the main title of the tale and appear on the top of each page, have not been considered.</td>
+            <td class="table-txt">Headers and running titles, that repat the main title of the tale and appear on the top of each page, have not been considered.</td>
         </tr>
         <tr>
             <th scope="row">Catch-words</th>
@@ -519,11 +512,11 @@
         <tr>
             <th scope="row">Signature marks</th>
             <td><img src="assets/img/exsignaturemark.png" class="table-img" alt="Signature marks example" onclick="zoomImage('assets/img/exsignaturemark.png', 'This is an example of signature marks in page 75 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
-            <td class="table-txt">Signature marks, which are located below the print space and state the sheet or the position in the entire work have not been taken into consideration.</td>
+            <td class="table-txt">Signature marks, which are located below the print space and state the sheet or the position in the entire work, have not been taken into consideration.</td>
         </tr>
     </tbody>
 </table>
-<p>Click on the pictures to zoom in!</p>
+<p style="margin-left: 162px;"><i class="bi bi-zoom-in"></i> Click on the pictures to zoom in!</p>
 <!-- Modale -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -564,7 +557,7 @@
           </tr>
         </tbody>
       </table>
-<p>Click on the pictures to zoom in!</p>
+<p style="margin-left: 192px;"><i class="bi bi-zoom-in"></i> Click on the pictures to zoom in!</p>
 <!-- Modale -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -579,9 +572,9 @@
 <div class="container section-title" data-aos="fade-up">
 <br>
     <div class="container section-title" data-aos="fade-up">
-        <p>After completing the transcription of all the selected images of the texts, and before starting the training of a Text Recognition model, we assigned the transcribed pages to the <b>Ground Truth</b> state. <br>
+        <p>After completing the transcription of all the selected images of the texts and before starting the training of a Text Recognition model, we assigned the transcribed pages to the <b>Ground Truth</b> state. <br>
             The Ground Truth consists of <b>accurate and verified reference data</b>, including the images and their corresponding precise transcriptions, which the model will use for learning and training.
-            This data is crucial for the success of the model, as machine learning statistically replicates the patterns found in the provided data.
+            This data is crucial for the success of the model, as machine learning statistically replicates the patterns found in the provided data. <br>
             Once the Ground Truth pages are prepared, the next step is to train the <a href="#evaluation">Text Recognition model</a>.</p>
             <br>
             <br>
@@ -595,13 +588,13 @@
 
        <!-- Section -->
     <div class="container section-title" data-aos="fade-up">
-      <p>After training the Text Recognition Model starting from our Ground Truth pages, we used it to transcribe the pages from <i>La vecchia scoperta</i> selected as our test set.</p>
+      <p>After training the Text Recognition Model starting from our Ground Truth pages, we used it to transcribe the printed text pages from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, selected as our test set.</p>
       <p>We proceeded with our analysis by using <b>ChatGPT</b>. <br>
-        In this phase, we provided ChatGPT with images of the printed text from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, which serves as our raw test set. We tasked ChatGPT with transcribing these images. <br>
+        In this phase, we provided ChatGPT with images of the printed text pages from  <i>La vecchia scoperta</i> which serves as our raw test set. We tasked ChatGPT with transcribing these images. <br>
         In line with the approach we used in Transkribus, we didn’t crop the images, deliberately including headers, page numbers, and signature marks to preserve the resolution and integrity of the images. <br>
         <a href="#sub">Subsequently</a>, we instructed ChatGPT to transcribe the text from the input images while preserving the original line breaks and omitting unnecessary elements.</p>
         <br>
-      <figure id="figure-5.1"><img src="assets/img/gpt_prompt_1.png" alt="gpt prompt" style="height: 350px;"><figcaption><i>Fig. 2.1</i> The image shows the first ChatGPT prompt.</figcaption></figure>
+      <figure id="figure-5.1"><img src="assets/img/gpt_prompt_1.png" alt="gpt prompt" style="height: 350px;"><figcaption><i>Fig. 2.3</i> The image shows the first ChatGPT prompt.</figcaption></figure>
     </div><!-- End Section -->
 
     <!-- Services Section -->
