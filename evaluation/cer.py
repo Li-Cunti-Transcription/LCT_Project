@@ -66,3 +66,39 @@ print("GPT WER and CER for page 2:\n", f"WER: {wer_gpt_page_2:.2f}, CER: {cer_gp
 wer_gpt_page_3 = pywer.wer(ref_page_3, gpt_page_3)
 cer_gpt_page_3 = pywer.cer(ref_page_3, gpt_page_3)
 print("GPT WER and CER for page 3:\n", f"WER: {wer_gpt_page_3:.2f}, CER: {cer_gpt_page_3:.2f}")
+
+# compute scores after new prompts
+pred_gpt_refined = []
+with open("evaluation/gpt_transcriptions/gpt_rightquot_replaced.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        pred_gpt_refined.append(line)
+
+print(len(pred_gpt_refined))
+
+wer_gpt_refined = pywer.wer(references, pred_gpt_refined)
+cer_gpt_refined = pywer.cer(references, pred_gpt_refined)
+print("GPT WER and CER after refined prompts:\n", f"WER: {wer_gpt_refined:.2f}, CER: {cer_gpt_refined:.2f}")
+
+gpt_page_1_refined, gpt_page_2_refined, gpt_page_3_refined = split_in_pages(pred_gpt_refined)
+# computing updated scores per page
+wer_gpt_1_ref = pywer.wer(ref_page_1, gpt_page_1_refined)
+cer_gpt_1_ref = pywer.cer(ref_page_1, gpt_page_1_refined)
+print("GPT WER and CER for page 1 after refined prompts:\n", f"WER: {wer_gpt_1_ref:.2f}, CER: {cer_gpt_1_ref:.2f}")
+wer_gpt_2_ref = pywer.wer(ref_page_2, gpt_page_2_refined)
+cer_gpt_2_ref = pywer.cer(ref_page_2, gpt_page_2_refined)
+print("GPT WER and CER for page 2 after refined prompts:\n", f"WER: {wer_gpt_2_ref:.2f}, CER: {cer_gpt_2_ref:.2f}")
+wer_gpt_3_ref = pywer.wer(ref_page_3, gpt_page_3_refined)
+cer_gpt_3_ref = pywer.cer(ref_page_3, gpt_page_3_refined)
+print("GPT WER and CER for page 3 after refined prompts:\n", f"WER: {wer_gpt_3_ref:.2f}, CER: {cer_gpt_3_ref:.2f}")
+
+# scores for page 1 after long-s prompt
+pred_gpt_longs = []
+with open("evaluation/gpt_transcriptions/gpt_longs_replaced_page1.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        pred_gpt_longs.append(line)
+
+print(len(pred_gpt_longs))
+
+wer_gpt_longs = pywer.wer(references, pred_gpt_longs)
+cer_gpt_longs = pywer.cer(references, pred_gpt_longs)
+print("GPT WER and CER for page 1 after long-s correction prompts:\n", f"WER: {wer_gpt_longs:.2f}, CER: {cer_gpt_longs:.2f}")
