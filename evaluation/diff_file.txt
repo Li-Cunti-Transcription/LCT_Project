@@ -753,7 +753,7 @@ Prediction: gialloteca, ed arrappata, la vocca sfaqquara-
 
 ==================================================
 Processing line 47...
-Reference: ta, e storta, e 'nsomma la varva d'annecchia,
+Reference: ta, e storta, e 'nfomma la varva d'annecchia,
 Prediction: ta, e florta, e ’nfomma la varva d’annecchia,
 
   ta,
@@ -761,8 +761,12 @@ Prediction: ta, e florta, e ’nfomma la varva d’annecchia,
 - storta,
 + florta,
   e
-- 'nsomma
+- 'nfomma
+? ^
+
 + ’nfomma
+? ^
+
   la
   varva
 - d'annecchia,
