@@ -651,8 +651,8 @@
 
       <div class="section-title" data-aos="fade-up">
         <h2>Results</h2>
-        <p>In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. <!--qualche dettaglio sulle formule-->
-          Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment methodology</a> and provided not only the overall WER and CER scores, but also a page-level computation.
+        <p style="padding-bottom:0.5em;">In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. <!--qualche dettaglio sulle formule-->
+          Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment methodology</a> and provided not only the overall WER and CER scores, but also the scores per page.</p>
           <p><b>Overall scores:</b></p>
             <table class="table metrics-table">
               <tr>
@@ -671,7 +671,7 @@
                 <td>5.51</td>
               </tr>
             </table>
-            <p><b>Scores for each page in the test set:</b></p>
+            <p><b>Scores per page:</b></p>
             <table class="table metrics-table">
               <tr>
               <th>Model</th>
@@ -716,9 +716,7 @@
                 <td>6.61</td>
               </tr>
             </table>
-            </p>
-            <p><!--now make sense of the data: analyse diffing for words, understand misssegmentation issues and which are the chars it had more difficult in recognizing. Maybe use count function to see which characters occurs more frequently and where--></p>
-            <p>In order to better understand which characters were mostly misidentified, we used Python <code>difflib</code> library for analysing the differences between the reference and prediction text</p>
+            <p>As a complementary tool that could provide us with an overall view of the typologies of errors and the main difficulties faced in the text recognition process, we used Python <code>difflib</code> library for producing an aligned comparison of the reference and prediction texts.</p>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -841,6 +839,62 @@
               </div>
               </div>
             </div>
+            <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the quality of the printed material, where often ink stains and other damages made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable. <!--space between apostrophe and following word--> <br>However, some errors could be easily addressed by refining prompts. In particular, we immediately realized that, in the transcription provided by ChatGPT, all severe-stressed "e" characters were transcribed as acute-stressed, and that the apostrophe was not consistently transcribed, but frequently replaced with a right single quotation character. ChatGPT was able to correct almost all the occurrences of the described phenomena. The WER and CER metrics applied on the transcriptions obtained after refining the prompts show the following results:</p>
+            <table class="table metrics-table">
+              <tr>
+                <th></th>
+                <th>WER</th>
+                <th>Decrease on WER</th>
+                <th>CER</th>
+                <th>Decrease on CER</th>
+                </tr>
+                <tr>
+                  <td>Overall score</td>
+                  <td>20.42</td>
+                  <td>-4.36</td>
+                  <td>4.46</td>
+                  <td>-1.05</td>
+                </tr>
+                <tr>
+                  <td>Page 1</td>
+                  <td>13.45</td>
+                  <td>-1.80</td>
+                  <td>2.14</td>
+                  <td>-0.96</td>
+                </tr>
+                <tr>
+                  <td>Page 2</td>
+                  <td>22.99</td>
+                  <td>-5.48</td>
+                  <td>5.10</td>
+                  <td>-1.19</td>
+                </tr>
+                <tr>
+                  <td>Page 3</td>
+                  <td>24.82</td>
+                  <td>-3.90</td>
+                  <td>5.62</td>
+                  <td>-0.99</td>
+                </tr>
+              </table>
+            <p>Addressing these errors lead to some improvements in the error rates, however, the main issue in the transcription provided by ChatGPT is represented by the incorrect identification of the "long-s", always transcribed as "f" in the output transcription. Attempts to refine prompts in order to obtain a correct transcription of "long-s" characters were only partially successfull, as shown in the following scores for page 1 after the replacement of "long-s" characters:</p>
+            <table class="table metrics-table">
+              <tr>
+                <th></th>
+                <th>WER</th>
+                <th>Decrease on WER</th>
+                <th>CER</th>
+                <th>Decrease on CER</th>
+                </tr>
+                <tr>
+                <td>Page 1</td>
+                  <td>14.35</td>
+                  <td>-0.90</td>
+                  <td>2.62</td>
+                  <td>-0.48</td>
+                </tr>
+            </table>
+            <p>In some cases, ChatGPT was able to transcribe a round-s, but there were also instances where the model was unable to distinguish between long-s and "f", extending the rendering to the latter and leading to an increase of the error rate with respect to the previous scores, and to a minor decrease with respect to the first transcription.</p>
       </div><!-- End Section Title -->
 
     </section><!-- /Services Section -->
