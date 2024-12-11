@@ -435,7 +435,7 @@
           <figure id="figure-5.1"><img src="LCT-REA/assets/img/initialsituationtrex.png" alt="initial situation once the image has been uploaded in Transkribus" style="height: 350px;"><figcaption><i>Fig. 2.1</i> The image shows the initial state after the selected images containing printed text have been uploaded to Transkribus but before any transcription has been performed.</figcaption></figure>
         </div><!-- End Section -->
           
-        <div class="container section-subtitle" data-aos="fade-up">
+        <div class="container section-title" data-aos="fade-up">
           <p>Then, we divided and organized the <a style="color:green"><b>printed text</b></a> in each image into different green regions and underlined the <a style="color:blue"><b>lines</b></a> of text with a blue baseline. These two steps are fundamental for establishing the reading order of the text once it has been transcribed.</p>
           <br>
           <figure id="figure-5.1"><img src="LCT-REA/assets/img/regionline.png" alt="Region and baselines recognition in Transkribus" style="height: 350px;"><figcaption><i>Fig. 2.2</i> The image shows the recognition of regions and baselines on the first page of the <i>Introduction</i> of <i>Lo cunto de li cunte</i>, performed in Transkribus before starting the transcription process.</figcaption></figure>
@@ -443,7 +443,7 @@
 
        <!-- Section -->
       <div class="container section-title" data-aos="fade-up">
-        <p>Once the texts were structured with regions and baselines, we began transcribing them. To ensure accurate work and create a reliable, well-executed, and unambiguous annotated corpus, we developed this detailed annotation guideline that emphasized the rules we followed during the transcription process.</p>
+        <p>Once the texts were structured with regions and baselines, we began transcribing them. To ensure accurate work and create a reliable, well-executed, and unambiguous annotated corpus, we developed detailed annotation guidelines that emphasized the rules we followed during the transcription process.</p>
         <br>
         <p>The transcription <b>followed the text</b> for what concerns:</p>
       </div><!-- End Section -->
@@ -496,7 +496,7 @@
 <br>
 <!-- Section -->
 <div class="container section-title" data-aos="fade-up">
-<p>In order to create a <b>clear, defined and simple corpus</b> that could be easily understood and trained we have decided to reduce and, when possible, even remove unclear and missing parts:</p>
+<p>In order to create a <b>clear, defined and simple corpus</b> that could be easily understood and trained we decided to reduce and, when possible, even remove unclear and missing parts:</p>
 </div><!-- End Section -->
 <div class="table-responsive-lg">
   <table class="table">
@@ -542,7 +542,7 @@
 <br>
 <!-- Section -->
 <div class="container section-title" data-aos="fade-up">
-  <p>However, we have employed some specific solutions for the <b>challenges</b> related to the peculiarities of the texts:</p>
+  <p>However, we employed some specific solutions for the <b>challenges</b> related to the peculiarities of the texts:</p>
 </div><!-- End Section -->
 
 <div class="table-responsive-lg">
@@ -596,20 +596,20 @@
           </div><!-- End Section -->
 <br>
     <!-- ChatGPT -->
-    <div class="section-subtitle" data-aos="fade-up" id="chatgpt">
+    <div class="section-title" data-aos="fade-up" id="chatgpt">
       <h2><b style="font-size: 60px;">Model Training and Automatic Transcription</b></h2>
     </div><!-- End Section Annotation guidelines -->
 
        <!-- Section -->
     <div class="container section-title" data-aos="fade-up">
       <p>We have trained two text recognition models, named Basile Printed and Basile Printed_fine-tuned, starting from our Ground Truth pages. <br>
-        <b>Basile Printed</b> was trained on our transcription without using base models while <b>Basile Printed_fine-tuned</b> was fine-tuned using Transkribus Print M1 in order to decrease the character error rate on the validation set. A more detailed overviwe of the models accuracy can be found in section <a href="#evaluation">Evaluation</a>. 
+        <b>Basile Printed</b> was trained on our transcription without using base models, while <b>Basile Printed_fine-tuned</b> was fine-tuned using Transkribus Print M1 in order to decrease the character error rate on the validation set. A more detailed overviwe of the models accuracy can be found in section <a href="#evaluation">Evaluation</a>. 
         <br>
         <br>
         After training the Text Recognition Model, we used the best-performing one to transcribe the printed text pages from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, selected as our test set.</p>
-      
+      <br>
         <p>We proceeded with our analysis by using <b>ChatGPT</b>. <br>
-        In this phase, we provided ChatGPT with images of the printed text pages from  <i>La vecchia scoperta</i> which serves as our raw test set. We tasked ChatGPT with transcribing these images. <br>
+        In this phase, we provided ChatGPT with images of the printed text pages from our raw test set <i>La vecchia scoperta</i> and we tasked ChatGPT with transcribing these images.
         In line with the approach we used in Transkribus, we didn’t crop the images, deliberately including headers, page numbers, and signature marks to preserve the resolution and integrity of the images. <br>
         <a href="#sub">Subsequently</a>, we instructed ChatGPT to transcribe the text from the input images while preserving the original line breaks and omitting unnecessary elements.</p>
         <br>
@@ -1225,7 +1225,9 @@
   <footer id="footer" class="footer position-relative light-background">
       <div class="container">
         <div class="copyright">
-          <p><i>Reliably Ever After</i> is the final project developed for the "Semantic Digital Libraries" course (a.a. 2024/2025) <br> within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna.</p>
+          <i>Reliably Ever After</i> is the final project developed for the "Semantic Digital Libraries" course (a.a. 2024/2025) <br> within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna. 
+          <br>
+          <br>
           <span>Copyright</span> <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> <span>All Rights Reserved</span>
         
         </div>
