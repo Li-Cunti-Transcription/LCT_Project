@@ -88,6 +88,18 @@ wer_tr_print_3 = pywer.wer(ref_page_3, tr_print_page_3)
 cer_tr_print_3 = pywer.cer(ref_page_3, tr_print_page_3)
 print("Transkribus Print WER and CER for page 3:\n", f"WER: {wer_tr_print_3:.2f}, CER: {cer_tr_print_3:.2f}")
 
+# scores for page 1 after long-s prompt
+pred_gpt_longs = []
+with open("evaluation/gpt_transcriptions/gpt_longs_replaced_page1.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        pred_gpt_longs.append(line)
+
+print(len(pred_gpt_longs))
+
+wer_gpt_longs = pywer.wer(ref_page_1, pred_gpt_longs)
+cer_gpt_longs = pywer.cer(ref_page_1, pred_gpt_longs)
+print("GPT WER and CER for page 1 after long-s correction prompts:\n", f"WER: {wer_gpt_longs:.2f}, CER: {cer_gpt_longs:.2f}")
+
 # compute scores after new prompts
 pred_gpt_refined = []
 with open("evaluation/gpt_transcriptions/gpt_rightquot_replaced.txt", "r", encoding="utf-8") as f:
@@ -127,6 +139,8 @@ print("GPT WER and CER after cleaning elisions:\n", f"WER: {wer_gpt_cleaned:.2f}
 
 # scores per page after cleaning elisions
 gpt_cleaned_page_1, gpt_cleaned_page_2, gpt_cleaned_page_3 = split_in_pages(gpt_cleaned)
+
+
 wer_cleaned_page_1 = pywer.wer(ref_page_1, gpt_cleaned_page_1)
 cer_cleaned_page_1 = pywer.cer(ref_page_1, gpt_cleaned_page_1)
 print("GPT WER and CER after cleaning elisions for page 1:\n", f"WER: {wer_cleaned_page_1:.2f}, CER: {cer_cleaned_page_1:.2f}")
@@ -136,16 +150,3 @@ print("GPT WER and CER after cleaning elisions for page 2:\n", f"WER: {wer_clean
 wer_cleaned_page_3 = pywer.wer(ref_page_3, gpt_cleaned_page_3)
 cer_cleaned_page_3 = pywer.cer(ref_page_3, gpt_cleaned_page_3)
 print("GPT WER and CER after cleaning elisions for page 3:\n", f"WER: {wer_cleaned_page_3:.2f}, CER: {cer_cleaned_page_3:.2f}")
-
-
-# scores for page 1 after long-s prompt
-pred_gpt_longs = []
-with open("evaluation/gpt_transcriptions/gpt_longs_replaced_page1.txt", "r", encoding="utf-8") as f:
-    for line in f:
-        pred_gpt_longs.append(line)
-
-print(len(pred_gpt_longs))
-
-wer_gpt_longs = pywer.wer(ref_page_1, pred_gpt_longs)
-cer_gpt_longs = pywer.cer(ref_page_1, pred_gpt_longs)
-print("GPT WER and CER for page 1 after long-s correction prompts:\n", f"WER: {wer_gpt_longs:.2f}, CER: {cer_gpt_longs:.2f}")

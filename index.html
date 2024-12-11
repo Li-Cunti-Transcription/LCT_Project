@@ -349,7 +349,7 @@
           <h2><b>Workflow</b></h2>
           <img src="LCT-REA/assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
-        <p>In order to create a high-quality, reliable, and valid project, it is essential to adhere to a well-defined project baseline which includes all the crucial steps that must be successfully completed to achieve excellent results.</p>
+        <p>In order to create a high-quality, reliable, and valid project, it is essential to adhere to a well-defined project pipeline which includes all the crucial steps that must be successfully completed to achieve excellent results.</p>
       </div><!-- End Section Title -->
      
       <div class="container">          
@@ -406,7 +406,7 @@
        <div class="section-title" data-aos="fade-up" id="taskdef">
         <h2><b style="font-size: 60px;">Task definition</b></h2>
         <p>First and foremost, it was crucial to define the task of the project clearly, ensuring a precise understanding of its scope and objectives. <br>
-          The first goal of the <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> project was to <b>train a model capable of faithfully transcribing the text</b> as it appeared on the printed page, including the normalization of s-graphemes, as explained in detail in the Annotation guidelines section. <br>
+          The first goal of the <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> project was to <b>train a model capable of faithfully transcribing the text</b> as it appeared on the printed page, including the normalization of s-graphemes, as explained in detail in the <a href="#annguide">Annotation Guidelines</a> section. <br>
           Additionally, it sought to compare the transcription performance of the Transkribus model with that of ChatGPT.
           The analysis started with the <b>Transkribus</b> platform, employing an annotated corpus as a training set and a raw corpus for evaluation. The focus then shifted to <b>ChatGPT</b>, directly instructing it to produce an accurate transcription of the raw test set. <br>
           Finally, the results from both transcriptions were compared and discussed in detail.</p>
@@ -517,7 +517,7 @@
         <tr>
             <th scope="row">Headers and running titles</th>
             <td><img src="LCT-REA/assets/img/headerex.png" class="table-img" alt="Headers example" onclick="zoomImage('LCT-REA/assets/img/headerex.png', 'This is an example of headers in page 77 of <i>La gatta Cenerentola</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
-            <td class="table-txt">Headers and running titles, that repat the main title of the tale and appear on the top of each page, have not been considered.</td>
+            <td class="table-txt">Headers and running titles, that repeat the main title of the tale and appear on the top of each page, have not been considered.</td>
         </tr>
         <tr>
             <th scope="row">Catch-words</th>
@@ -558,7 +558,7 @@
           <tr>
               <th scope="row">S-characters/graphemes </th>
               <td><img src="LCT-REA/assets/img/exscharacter.png" class="table-img" alt="S-characters/graphemes example" onclick="zoomImage('LCT-REA/assets/img/exscharacter.png', 'This is an example of long “s” in page 58 of <i>Vardiello</i> of <i>Lo Cunto de li Cunte</i>.')"></td>
-              <td class="table-txt">S-characters/graphemes were transcribed as round-s. The letter “s” can appear in different forms, such as normal and long “s” (with descender, as can be seen in "stisso" in the text), which have been transcribed as normal round-s.</td>
+              <td class="table-txt">S-characters/graphemes were transcribed as round-s. The letter “s” can appear in different forms, such as normal and long “s” (as can be seen in "stisso" in the text), which have been transcribed as normal round-s.</td>
           </tr>
           <tr>
               <th scope="row">Unclear</th>
@@ -603,7 +603,7 @@
        <!-- Section -->
     <div class="container section-title" data-aos="fade-up">
       <p>We have trained two text recognition models, named Basile Printed and Basile Printed_fine-tuned, starting from our Ground Truth pages. <br>
-        <b>Basile Printed</b> was trained on our transcription without using base models, while <b>Basile Printed_fine-tuned</b> was fine-tuned using Transkribus Print M1 in order to decrease the character error rate on the validation set. A more detailed overviwe of the models accuracy can be found in section <a href="#evaluation">Evaluation</a>. 
+        <b>Basile Printed</b> was trained on our transcription without using base models, while <b>Basile Printed_fine-tuned</b> was fine-tuned using Transkribus Print M1 in order to decrease the character error rate on the validation set. A more detailed overview of the models accuracy can be found in section <a href="#evaluation">Evaluation</a>. 
         <br>
         <br>
         After training the Text Recognition Model, we used the best-performing one to transcribe the printed text pages from the fourth tale in <i>Lo Cunto de li Cunte</i>, titled <i>La vecchia scoperta</i>, selected as our test set.</p>
@@ -630,7 +630,7 @@
           <p>Once the Ground Truth text for our corpus was ready, we proceded with the Text Recognition Model training (as a reminder, the number of <b>pages</b> transcribed was <b>23</b>, for a total of <b>6134 words</b>). <b>Basile Printed</b>, exclusively trained on our Ground Truth transcriptions, performed pretty well, with a CER on the validation set of <b>0.67%</b>. In order to further decrease the character error rate, we fine-tuned our model by selecting the multi-language model <b>Transkribus Print M1</b>, trained on printed texts written in several languages, among which Italian. By doing so, the CER on the validation decreased to <b>0.24%</b>. This model, as the best performing one, was then selected for the comparison with ChatGPT.</p>
           <div class="img-container d-flex justify-content-center py-3"><figure><img src="LCT-REA/assets/img/learning_curve_basile.png" alt="Basile Printed Learning Curve" style="height: 200px;"><figcaption><i>Fig. 5.1 </i>Learning Curve of Basile Printed</figcaption></figure><figure><img src="LCT-REA/assets/img/learning_curve_basile_base_model.png" alt="Basile Printed fine-tuned Learning Curve" style="height: 200px;"><figcaption><i>Fig. 5.2 </i>Learning Curve of Basile Printed with base model</figcaption></figure></div>
           <p>The charts show the percentage of error (on the y-axis) for both the training and the validation set over the epochs (x-axis). Transkribus' default paramethers were adopted for the training of both the models: the number of epochs was set to 100 and the early stoppings to 20. As shown in the figures above, the first model stopped the training after 87 epochs, since there was no further improvement on the CER, while the second one stopped after 96 epochs. </p>
-          <p>Basile Printed_fine-tuned was then used to automatically transcribe our test set, for which we chose a selection of pages from a fourth tale included in <i>Lo Cunto de li Cunte</i>, namely <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the output transcriptions obtained by the models and the evaluation results.</p>
+          <p><b>Basile Printed_fine-tuned</b> was then used to automatically transcribe the selected pages from <i>La vecchia scoperta</i>. The same pages were then fed to ChatGPT and both the results of our custom model text recognition and the automatic transcription obtained with GPT were compared with our Ground Truth transcription for the test set.<br> The following sections present a detailed discussion of the output transcriptions obtained by the models and the evaluation results.</p>
         </div><!-- End Section Title -->
 
       <!-- Section Title -->
@@ -659,13 +659,13 @@
           <figure><img src="LCT-REA/assets/img/gpt_4.png" alt="gpt-transcription-4" style="height: 150px;"><figcaption><i> Fig. 5.7</i> Application of the same criteria <br>to the following page</figcaption></figure>
           <figure><img src="LCT-REA/assets/img/gpt_5.png" alt="gpt-transcription-5" style="height: 150px;"><figcaption><i>Fig. 5.8</i> Transcription without running titles</figcaption></figure>
         </div>
-        <p>A quick analysis of the transcription provided by ChatGPT shows that, unlike Transkribus' model, there wasn't any difficulty in the transcription of headings, while the most troublesome element, as expected, is represented by the normalization of s-graphemes.</p>
+        <p>A quick analysis of the transcription provided by ChatGPT showed that, unlike Transkribus' model, there wasn't any difficulty in the transcription of headings, while the most troublesome element, as expected, was the normalization of s-graphemes.</p>
       </div><!-- End Section Title -->
 
       <div class="section-subtitle" data-aos="fade-up">
         <h2>Results</h2>
-        <p style="padding-bottom:0.5em;">In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. <!--qualche dettaglio sulle formule-->
-          Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment methodology</a> and provided not only the overall WER and CER scores, but also the scores per page.</p>
+        <p style="padding-bottom:0.5em;">In order to evaluate the performance of Transkribus' trained model and ChatGPT on our test set, we used the Python library <code>pywer</code> for computing the <b>Word Error Rate (WER)</b> and <b>Character Error Rate (CER)</b> for both the automatic transcriptions by comparing them with our Ground Truth transcription. 
+          Due to the characteristics of historical printed texts, that can exhibit major differences from page to page, we followed the <a href="https://ocr-d.de/en/spec/ocrd_eval" target="_blank">OCR-D accuracy assessment</a> methodology and provided not only the overall WER and CER scores, but also the scores per page.</p>
           <p><b>Overall scores:</b></p>
             <table class="table table-hover metrics-table">
               <tr>
@@ -853,7 +853,7 @@
               </div>
             </div>
             <div class="section-subtitle">
-            <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the <b>quality of the printed material</b>, where ink stains and other damages often made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable.<br>The main issue in the output provided by ChatGPT is is represented by the incorrect identification of the "<b>long-s</b>", always transcribed as "f" by the model. Attempts to refine prompts in order to obtain a correct transcription of "long-s" characters were <b>not successfull</b>, as shown in the following scores for page 1 after the request to replace "long-s" characters:</p>
+            <p>A careful analysis of the outputs allowed us to understand where the errors occurred and, in some cases, what may had caused them. First of all, some of the substitions highlighted in the diff table (like GT: "Roccaforte", P: "Rocoaforte" or GT:"arvolo", P: "arbolo") are due to the <b>quality of the printed material</b>, where ink stains and other damages often made the recognition particularly difficult.<br> For similar reasons, frequent substitutions involve the confusion between lower case "l" and upper case "I", or between "t" and "r", not always easily identifiable.<br>The main issue in the output provided by ChatGPT is is represented by the incorrect identification of the "<b>long-s</b>", always transcribed as "f" by the model. Attempts to refine prompts in order to obtain a correct transcription of "long-s" characters were overall <b>not successfull</b>, as shown in the following scores for page 1 after the request to transcribe "long-s" characters as "round-s":</p>
             <table class="table table-hover metrics-table">
               <tr>
                 <th></th>
@@ -870,7 +870,7 @@
                   <td>+0.63</td>
                 </tr>
             </table>
-            <p>In some cases, ChatGPT was able to transcribe a round-s, but there were also instances where the model was unable to distinguish between long-s and "f", extending the rendering to the latter and leading to an increase of the error rate with respect to the previous scores on the same page.</p> 
+            <p>In some cases, ChatGPT was able to correct the error, but there were also instances where the model was unable to distinguish between "long-s" and "f", extending the rendering to the latter and leading to an increase of the error rate with respect to the previous scores on the same page.</p> 
             <p>However, some errors could be easily addressed by <b>refining prompts</b>. In particular, we realized that, in the transcription provided by ChatGPT, all severe-stressed "e" ("<b>è</b>") characters were transcribed as acute-stressed ("<b>é</b>"), and that the <b>apostrophe</b> was not consistently transcribed, but frequently replaced with a <b>right single quotation mark</b> character. ChatGPT was <b>able to correct</b> almost all the occurrences of the described phenomena. The WER and CER metrics applied on the transcriptions obtained after refining the prompts show the following results:</p>
             <table class="table table-hover metrics-table">
               <tr>
@@ -882,8 +882,8 @@
                 </tr>
                 <tr>
                   <td>Overall score</td>
-                  <td>20.42</td>
-                  <td>-4.36</td>
+                  <td>20.92</td>
+                  <td>-3.86</td>
                   <td>4.46</td>
                   <td>-1.05</td>
                 </tr>
@@ -909,7 +909,7 @@
                   <td>-0.99</td>
                 </tr>
               </table>
-              <p>Another factor to consider when evaluating the obtained scores was the <b>insertion of whitespaces</b> between an apostrophe and the following word, which significantly impacts the character error rate and, more importantly, the word error rate, as it can led to segmentation issues at the word level. To address this problem, the text generated after refining the prompts was <b>cleaned</b> to handle cases of <b>elision</b> in a way consistent with the ground truth transcription. A new performance evaluation on the output resulted in the following scores:</p>
+              <p>Another factor to consider in the analysis of the obtained scores was the <b>insertion of whitespaces</b> between an apostrophe and the following word, which significantly impacts the character error rate and, more importantly, the word error rate, as it can lead to segmentation issues at the word level. To address this problem, the text generated after refining the prompts was <b>cleaned</b> to handle cases of <b>elision</b> in a way consistent with the ground truth transcription. A new performance evaluation on the output resulted in the following scores:</p>
               <table class="table table-hover metrics-table">
                 <tr>
                   <th></th>
@@ -947,7 +947,7 @@
                     <td>-0.99</td>
                   </tr>
               </table>
-            <p>Addressing these errors lead to some improvements in the error rates, especially if we consider the Word Error Rate, with an overall score which decreased by 6.04% and even more for the first page of transcription.
+            <p>Addressing these errors led to some improvements in the error rates, especially if we consider the Word Error Rate, with an overall score which decreased by 6.04% and even more for the first page of transcription.
       </div><!-- End Section Title -->
 
   </section><!-- /Services Section -->
@@ -1121,7 +1121,7 @@
           <img src="LCT-REA/assets/img/Cornicetta.jpg" alt="Cornicetta destra" class="cornice">
         </div>
         <p>The team is enrolled in the master degree course in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital Humanities and Digital Knowledge</a> at the Univeristy of Bologna. This work was realized as a project for the <a href="https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/424786" target="_blank">Semantic Digital Libraries</a> course.</p>
-        <p>All the materials developed for the project <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> can be found in our <a href="https://github.com/Li-Cunti-Transcription/LCT_Project" target="_blank">github repository</a>.</p>
+        <p>All the materials developed for the project <strong class="px-1 sitename" style="font-family: 'Fleur de Leah';">Reliably Ever After</strong> can be found in our <a href="https://github.com/Li-Cunti-Transcription/LCT_Project" target="_blank">GitHub repository</a>.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
